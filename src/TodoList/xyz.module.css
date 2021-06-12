@@ -1,0 +1,6 @@
+.test {
+  background: blue;
+  .other {
+    background: yellow;
+  }
+}
