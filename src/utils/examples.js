@@ -247,6 +247,7 @@ const c = id({});
  */
 function seriousalize(key, object) {
   // ????
+  return key
 }
 
 
@@ -268,8 +269,16 @@ class C {
     /** @type {number} */
     this.size;
 
-    // this.initialize(data); // Should error, initializer expects a string
+    this.cool(data);
+
+    this.initialize(data.toString());
   }
+  /**
+   * @param {number} n
+   */
+  cool = function (n) {
+    this.size = n;
+  };
   /**
    * @param {string} s
    */
