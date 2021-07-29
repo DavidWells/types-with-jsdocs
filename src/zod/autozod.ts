@@ -15,7 +15,6 @@ export interface Villain {
   name: string;
   powers: string[];
   friends: Villain[];
-  canBeTrusted: never;
 }
 
 export interface EvilPlan {

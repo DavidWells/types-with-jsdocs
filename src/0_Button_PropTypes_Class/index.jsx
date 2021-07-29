@@ -4,8 +4,10 @@ import PropTypes from 'prop-types'
 /**
  * General component description in JSDoc format. Markdown is *supported*.
  */
-export default class ButtonPropTypes extends React.Component {
+export default class ButtonClassWithPropTypes extends React.Component {
   static propTypes = {
+    /** Description of prop "children". */
+    children: PropTypes.element,
     /** Description of prop "foo". */
     foo: PropTypes.number,
     /** Description of prop "baz". */
@@ -19,9 +21,10 @@ export default class ButtonPropTypes extends React.Component {
   }
 
   render() {
+    const { children } = this.props
     return (
       <div>
-        Hello
+        {children}
       </div>
     )
   }
