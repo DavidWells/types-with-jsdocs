@@ -1,7 +1,7 @@
 /**
  * @type {string}
  */
-var s;
+var s = 'x';
 
 /** @type {Window} */
 var win;
@@ -385,3 +385,5 @@ function fn9(p1) {
  * @returns {value is Iterable<*>}
  */
 const isIterable = (value) => Boolean(value && value[Symbol.iterator]);
+
+export { s }

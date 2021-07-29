@@ -1,4 +1,4 @@
-import * as TypeFest from "type-fest"
+import * as TypeFest from 'type-fest'
 
 /**
  * @template T
@@ -9,10 +9,20 @@ import * as TypeFest from "type-fest"
  * @typedef DbResult
  * @property {string} full_name
  * @property {string} street_address
+ * @property {SomethingGlobal} [something]
  */
 
 /** @type {CamelCasedProps<DbResult>} */
 const person = {
   fullName: 'Bob Bobson',
-  streetAddress: 'Infinite loop 1'
+  streetAddress: 'Infinite loop 1',
+  something: 'value2'
+};
+
+
+/** @type {CamelCasedPropsGlobal<DbResult>} */
+const personTwo = {
+  fullName: 'Bob Bobson',
+  streetAddress: 'Infinite loop 1',
+  something: 'value'
 };
