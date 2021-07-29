@@ -8,6 +8,7 @@ yarn-error.log*
 # Auuto generated files
 src/zod/autozod-schema.json
 src/zod/autozod-out.js
+src/utils/types-schema.json
 
 coverage-ts
 dist
