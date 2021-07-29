@@ -72,7 +72,7 @@ class UserAccount {
 }
 `
 
-const filePath = path.resolve(__dirname, './src/Button/index.jsx')
+const filePath = path.resolve(__dirname, '../src/1_Button_SimpleJSdoc/index.jsx')
 const fileCode = fs.readFileSync(filePath, 'utf-8')
 const obj = dox.parseComments(code);
 const { inspect } = require('util')

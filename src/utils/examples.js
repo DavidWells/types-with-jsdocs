@@ -378,3 +378,10 @@ function fn9(p1) {
     return p1.join();
   }
 }
+
+/**
+ * @param {any} value
+ * @docs https://github.com/voxpelli/types-in-js/discussions/8
+ * @returns {value is Iterable<*>}
+ */
+const isIterable = (value) => Boolean(value && value[Symbol.iterator]);

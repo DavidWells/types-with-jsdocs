@@ -1,0 +1,26 @@
+{
+  "name": "comment-parser-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "DavidWells",
+  "license": "ISC",
+  "devDependencies": {
+    "@microsoft/tsdoc": "^0.13.2",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "comment-parser": "^1.1.5",
+    "doxxx": "^1.0.0",
+    "ts-to-zod": "^1.3.0",
+    "type-coverage": "^2.17.5",
+    "type-fest": "^1.2.2",
+    "typescript": "^4.3.2",
+    "typescript-coverage-report": "^0.6.0",
+    "typescript-json-schema": "^0.50.1"
+  }
+}

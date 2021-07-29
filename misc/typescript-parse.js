@@ -106,7 +106,7 @@ function tsParse(filename, options) {
 const fs = require('fs')
 const path = require('path')
 
-const inputFilename = path.resolve(__dirname, './src/6_List_TSProps/index.tsx')
+const inputFilename = path.resolve(__dirname, '../src/6_List_TSProps/index.tsx')
 
 const x = tsParse(inputFilename, {})
 console.log('x', x)

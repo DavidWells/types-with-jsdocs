@@ -48,3 +48,16 @@ function findAtLineFromError (e) {
 function ifError(err, msg) {
   xyz(!err, err, 'no error', msg || String(err), 'ifError')
 }
+
+
+/**
+ * Description about the function
+ * @param {string[]}	a - description about a
+ * @return {Promise<string[]>} n	- Promise fulfilled by array of strings
+ */
+function example(a) {
+  return Promise.resolve(a.map((x) => `_${x}`))
+}
+example(['one', 'two', 'three']).then((newArray) => {
+  console.log(newArray)
+})

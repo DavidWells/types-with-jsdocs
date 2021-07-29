@@ -5,7 +5,7 @@ const fs = require('fs')
 const path = require('path')
 const os = require('os')
 
-const inputFilename = path.resolve(__dirname, './src/6_List_TSProps/index.tsx')
+const inputFilename = path.resolve(__dirname, '../src/6_List_TSProps/index.tsx')
 const code = fs.readFileSync(inputFilename, 'utf-8')
 
 const tsdocParser = new TSDocParser();
