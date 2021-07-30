@@ -1,7 +1,9 @@
-import { Superman } from './autozod'
 import { supermanSchema } from './autozod.validate'
 
-const superman: Superman = {
+/**
+ * @type { import("./autozod").Superman } Superman
+ */
+const superman = {
   name: 'superman',
   age: 12,
   underKryptonite: false,
