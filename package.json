@@ -8,8 +8,10 @@
     "type-coverage": "type-coverage --detail --strict --at-least 90 --ignore-files 'test/*'",
     "ts-coverage": "typescript-coverage-report",
     "emit": "tsc --noEmit false --emitDeclarationOnly true",
+    "xemit": "tsc --noEmit true",
     "generate": "npm run generate-zod && npm run generate-json-schema",
     "generate-zod": "ts-to-zod ./src/zod/autozod.d.ts ./src/zod/autozod-out.js",
+    "types-css": "tcm src --camelCase",
     "x": "typescript-json-schema --ignoreErrors \"./src/utils/types.d.ts\" '*' -o ./src/utils/types-schema.json",
     "generate-json-schema": "typescript-json-schema --ignoreErrors \"./src/zod/autozod.d.ts\" '*' -o ./src/zod/autozod-schema.json"
   },
@@ -35,6 +37,7 @@
     "ts-to-zod": "^1.4.0",
     "type-coverage": "^2.18.0",
     "type-fest": "^1.2.3",
+    "typed-css-modules": "^0.7.0",
     "typescript": "^4.3.5",
     "typescript-coverage-report": "^0.6.0",
     "typescript-json-schema": "^0.50.1",

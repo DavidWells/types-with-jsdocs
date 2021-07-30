@@ -5,10 +5,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Auuto generated files
+# Auto generated files
 src/zod/autozod-schema.json
 src/zod/autozod-out.js
 src/utils/types-schema.json
+
+# Ignore Auto generated CSS types
+src/**/**/*.css.d.ts
+src/**/**/*.module.css.d.ts
 
 coverage-ts
 dist
