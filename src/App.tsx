@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import TodoList from './TodoList'
 import Button from './1_Button_JSDoc_Simple'
 import ButtonTwo from './2_Button_JSDoc_TypeDef_Function'
@@ -7,10 +7,26 @@ import ButtonImportedTypes from './4_Button_JSDoc_ImportedTypes'
 import ButtonReactTypes from './5_Button_JSDoc_ImportedTypes_React'
 import List from './6_List_TypeScript'
 import Card from './Card'
+import Analytics from 'analytics'
+import { addListener } from '@analytics/listener-utils'
+
+const analytics = Analytics({
+  app: 'xyz',
+})
+
+
+console.log('Analytics lib', Analytics)
+console.log('analytics instance', analytics)
 
 export default function App() {
+  const divRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    addListener(divRef.current, 'click', () => {
+      console.log('do thing')
+    })
+  })
   return (
-    <div>
+    <div ref={divRef}>
       <List message='jejeje' />
       <Card>
         hi

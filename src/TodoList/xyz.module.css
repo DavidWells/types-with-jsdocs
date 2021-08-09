@@ -1,9 +1,9 @@
 .test {
   background: blue;
   .other {
-    background: yellow;
+    background: green;
   }
 }
-.coolBeans {
+.coolBean {
   color: purple;
 }
