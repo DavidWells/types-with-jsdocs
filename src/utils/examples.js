@@ -93,7 +93,10 @@ var question;
  * @type {number | string}
  */
 var numberOrString = Math.random() < 0.5 ? "hello" : 100;
-var typeAssertedNumber = /** @type {number} */ (numberOrString);
+var typeAssertedNumber = Math.round(/** @type {number} */(numberOrString));
+
+console.log(/**@type {string}*/(numberOrString).toUpperCase())
+
 
 // You can also import declarations from other files using import types. This syntax is TypeScript-specific and differs from the JSDoc standard:
 
@@ -389,3 +392,16 @@ function fn9(p1) {
 const isIterable = (value) => Boolean(value && value[Symbol.iterator]);
 
 export { s }
+
+/**
+ * @callback arrayCallback
+ * @param  {object} element - Value of array element
+ * @param  {number} index   - Index of array element
+ * @param  {Array}  array   - Array itself
+ */
+
+/**
+ * @param {arrayCallback} callback - function applied against elements
+ * @return {Array} with elements transformed by callback
+ */
+const mapper = function(callback) { return [] }
