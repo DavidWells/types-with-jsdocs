@@ -5,10 +5,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Auto generated files
-src/zod/autozod-schema.json
-src/zod/autozod-out.js
-src/utils/types-schema.json
+# Auto generated zod files
+src/**/**/*.validate.js
+
+# Ignore auto generated json schema files
+src/**/**/*.schema.json
+
+# Ignore Auto generated types, except types.d.ts files
+src/**/**/*.d.ts
+!src/**/**/types.d.ts
 
 # Ignore Auto generated CSS types
 src/**/**/*.css.d.ts
