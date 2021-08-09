@@ -6,7 +6,7 @@
     "checkJs": true,
     "skipLibCheck": false,
     "noImplicitAny": false,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -15,8 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "declaration": true,
     "jsx": "react"
   },
   "include": ["./src"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "**/*.d.ts", 
+    "dist",
+    "node_modules"
+  ]
 }
