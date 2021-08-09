@@ -21,9 +21,9 @@ export default class ButtonClassWithPropTypes extends React.Component {
   }
 
   render() {
-    const { children } = this.props
+    const { children, className } = this.props
     return (
-      <div>
+      <div className={className}>
         {children}
       </div>
     )
