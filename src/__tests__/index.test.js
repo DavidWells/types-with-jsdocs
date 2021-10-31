@@ -1,7 +1,7 @@
 /* initialize JSDOM */
 // import './misc/_setup-tests.js' // with jsdom pkh // OR -r global-jsdom/register
 // import { setupJSDOM } from './misc/_initJSDom'
-import {test} from 'uvu'
+import { test } from 'uvu'
 import * as assert from 'uvu/assert'
 import React from 'react'
 import { fireEvent, render } from "@testing-library/react"
@@ -14,7 +14,6 @@ import { itSupportsClassName } from './misc/utils'
 https://github.com/modosc/global-jsdom
 https://www.npmjs.com/package/mock-css-modules
 */
-
 
 test('Tests run', async () => {
   assert.is(true, true)
@@ -56,5 +55,9 @@ test("component with css modules renders", async () => {
   // console.log('result.container.innerHTML', result.container.innerHTML)
   assert.match(result.container.innerHTML, 'Complain about miners')
 })
+
+// Needed to exit process once tests finish
+// @ts-ignore
+test.after(() => setTimeout(() => process.exit(0), 300))
 
 test.run()

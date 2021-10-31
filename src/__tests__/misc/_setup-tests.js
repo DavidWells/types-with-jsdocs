@@ -1,4 +1,5 @@
-import { ConstructorOptions, JSDOM } from "jsdom";
+// import { ConstructorOptions, JSDOM } from "jsdom";
+const { ConstructorOptions, JSDOM } = require('jsdom')
 process.env.NODE_ENV = 'test'
 
 const jsdom = new JSDOM('<!doctype html><html><body></body></html>')
