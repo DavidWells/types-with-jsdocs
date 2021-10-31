@@ -13,13 +13,13 @@
 /**
  * Cleanup event listener
  * @callback RemoveListener
- * @returns {AttachListener|void}
+ * @returns {AttachListener}
  */
 
 /**
  * ReAttach event listener
  * @callback AttachListener
- * @returns {RemoveListener|void}
+ * @returns {RemoveListener}
  */
 
 /**
@@ -35,5 +35,10 @@
 
 /** @type {AddEventListener} */
 function add(elements, eventType, handler, options) {
-  return () => {}
+  /** @type RemoveListener */ 
+  const remove = () => {
+    /** @type AttachListener */ 
+    return () => {}
+  }
+  return remove
 }
