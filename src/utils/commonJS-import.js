@@ -16,6 +16,8 @@ function myFunc(xyz) {
   return { 
     total: 2, 
     adjustedTotal: 3, 
-    avgWeight: 4
+    avgWeight: 4,
+    // @ts-ignore-start
+    lol: true
   }
 }
