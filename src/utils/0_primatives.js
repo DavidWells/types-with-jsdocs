@@ -21,3 +21,9 @@ const jsDocAny = 'any value';
 
 /** @type {any} */
 const tsAny = 'any value';
+
+/** @type {unknown} */
+const tsUnknown = 'unknown value';
+
+/** @type {PromiseLike<string>} */
+var promisedString = Promise.resolve('hi')

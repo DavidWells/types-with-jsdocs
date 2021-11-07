@@ -68,3 +68,16 @@ function noReturn() {
 function neverReturn() {
   throw Error('ERRORRRRR');
 }
+
+/**
+ * Function no returrn value https://fettblog.eu/typescript-jsdoc-superpowers/
+ * @param {string} url
+ * @param {(status: number, response?: string) => void} cb
+ */
+function loadData(url, cb) {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', url)
+  xhr.onload = () => {
+    cb(xhr.status, xhr.responseText)
+  }
+}
