@@ -57,6 +57,13 @@ function mapValues(object, mapFunction) {
 - https://dev.to/t7yang/type-safety-in-javascript-with-jsdoc-and-vscode-1a28
 - https://medium.com/@antonkrinitsyn/jsdoc-generic-types-typescript-db213cf48640
 - [JSDoc Cheatsheet and Type Safety Tricks | Joshua's Docs](https://docs.joshuatz.com/cheatsheets/js/jsdoc/)
+- [TypeScript without TypeScript -- JSDoc superpowers](https://fettblog.eu/typescript-jsdoc-superpowers/)
+
+
+
+- https://github.com/jsdoc-type-pratt-parser/jsdoc-type-pratt-parser
+- https://github.com/hegemonic/catharsis
+- https://github.com/jsdoctypeparser/jsdoctypeparser
 
 
 ## Runtime type checkers
@@ -64,3 +71,9 @@ function mapValues(object, mapFunction) {
 - https://github.com/brielov/typed
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod
+
+
+## Msc
+
+- eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json
+- https://github.com/benawad/gen-env-types
