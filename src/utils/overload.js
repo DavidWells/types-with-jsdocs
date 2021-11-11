@@ -20,6 +20,34 @@ var foobar = { foo: "foo", bar: "bar" };
 
 
 // ───────────────────────
+// https://austingil.com/typescript-function-overloads-with-jsdoc/
+
+// A Naive Solution
+/**
+ * @param {string | number} input 
+ * @returns {string | number}
+ */
+function double(input) {
+  if (typeof input === 'number') {
+    return input * 2
+  }
+  return input + input
+}
+
+// /**
+//  * @type {{
+//  * (input: number) => number;
+//  * (input: string) => string;
+//  * }}
+//  */
+// const doubleTwo = (input) => {
+//   if (typeof input === 'number') {
+//     return input * 2
+//   }
+//   return input + input
+// }
+
+// ───────────────────────
 
 // via https://github.com/microsoft/TypeScript/issues/25590#issuecomment-942782630
 /**
@@ -53,6 +81,7 @@ function overloaded(...args) {
 overloaded(1, '2')
 overloaded(true, {})
 overloaded({ name: 'bob', age: 11 }, true)
+
 
 
 

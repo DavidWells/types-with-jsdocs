@@ -26,14 +26,14 @@ function mapValues(object, mapFunction) {
 
 [Ignoring multiple lines](https://github.com/Microsoft/TypeScript/issues/19573#issuecomment-457598978)
 
-```
+```js
 // @ts-ignore-start
 // @ts-ignore-end
 ```
 
 [Nuclear option to disable in file](https://github.com/Microsoft/TypeScript/issues/19573#issuecomment-924972932)
 
-```
+```js
 // @ts-nocheck
 ```
 

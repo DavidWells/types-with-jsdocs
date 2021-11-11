@@ -1,3 +1,4 @@
+// @ts-nocheck til 4.5.0
 // https://github.com/microsoft/TypeScript/issues/30445#issuecomment-571422490
 
 /** 
@@ -15,3 +16,8 @@ var ONE = 1;
 const isConst = /** @type {const} */ ({
     hello: "world, not string"
 })
+
+var asConst1 = /** @type {const} */(1);
+var asConst2 = /** @type {const} */({
+    x: 1
+});

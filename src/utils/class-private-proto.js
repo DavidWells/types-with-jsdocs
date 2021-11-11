@@ -23,25 +23,25 @@ Animal.prototype.move = function (x, y) {
     this.y = y;
 }
 
-/**
- * @private
- * @constructor
- * @name Dog
- * @extends Animal
- * @classdesc A dog.
- * @description Creates a new dog.
- */
-function Dog() {}
+// /**
+//  * @private
+//  * @constructor
+//  * @name Dog
+//  * @extends Animal
+//  * @classdesc A dog.
+//  * @description Creates a new dog.
+//  */
+// function Dog() {}
 
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.constructor = Dog;
 
-/**
- * @private
- * @function
- * @name Dog#bark
- * @description The dog barks.
- */
-Dog.prototype.bark = function () {
-    console.log('Woof!');
-}
+// /**
+//  * @private
+//  * @function
+//  * @name Dog#bark
+//  * @description The dog barks.
+//  */
+// Dog.prototype.bark = function () {
+//     console.log('Woof!');
+// }

@@ -1,5 +1,5 @@
+// @ts-nocheck
 // eslint-disable-next-line spaced-comment
-/// <reference types="ses"/>
 
 // https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/pegasus/package.json#L53
 

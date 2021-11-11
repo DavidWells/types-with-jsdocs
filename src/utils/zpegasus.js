@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 
 // https://raw.githubusercontent.com/Agoric/agoric-sdk/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/pegasus/src/pegasus.jshttps://raw.githubusercontent.com/Agoric/agoric-sdk/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/pegasus/src/pegasus.js
 

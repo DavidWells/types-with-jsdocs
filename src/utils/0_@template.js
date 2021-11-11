@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 // https://github.com/voxpelli/types-in-js/discussions/17
 
 /** @template [T=undefined] */

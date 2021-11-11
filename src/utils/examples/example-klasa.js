@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 // https://github.com/pkdev08/klasa-v13/blob/cd308ccfef1b57b51fffad1b66669bc5fc811d3f/src/lib/util/util.js
 // https://github.com/pkdev08/klasa-v13/blob/5dd8351070b5a9448ab8fa2b78d993a2bfa423a5/src/lib/util/QueryBuilder.js#L3
 // https://github.com/pkdev08/klasa-v13/blob/5dd8351070b5a9448ab8fa2b78d993a2bfa423a5/src/lib/util/Type.js

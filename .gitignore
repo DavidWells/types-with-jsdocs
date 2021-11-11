@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+misc/structured-types
 # Auto generated zod files
 src/**/**/*.validate.js
 

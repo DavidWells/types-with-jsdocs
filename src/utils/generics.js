@@ -1,3 +1,4 @@
+// @ts-nocheck
 // https://fettblog.eu/typescript-jsdoc-superpowers/
 
 /**
