@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-no-unused-selectors"
+  ],
+  "rules": {
+    "declaration-no-important": true,
+    "color-hex-case": "upper",
+    "indentation": 2,
+    "plugin/no-unused-selectors": [ true, { "severity": "warning" }],
+    "no-eol-whitespace": null,
+    "no-missing-end-of-source-newline": null
+  }
+}
