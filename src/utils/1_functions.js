@@ -27,6 +27,8 @@ function addDec(x, y) {
   return x + y;
 }
 
+
+
 /**
  * JSDoc style optional parameter
  * @param {number} [x] optional
@@ -80,4 +82,32 @@ function loadData(url, cb) {
   xhr.onload = () => {
     cb(xhr.status, xhr.responseText)
   }
+}
+
+
+/** 
+ * Default numeric param
+ * @param {number} [x=1] d4 damage 
+ */
+export function m(x) {
+  return x
+}
+
+/**
+ * Default string param
+ * @param {string} [somebody="John Doe"] - Somebody's name.
+ */
+export function sayHello(somebody) {
+  if (!somebody) {
+    somebody = 'John Doe';
+  }
+  alert('Hello ' + somebody);
+}
+
+/**
+ * Just params
+ * @param somebody
+ */
+export function sayBye(somebody) {
+  alert('Bye ' + somebody);
 }

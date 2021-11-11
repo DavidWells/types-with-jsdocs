@@ -2,7 +2,7 @@ import React from 'react'
 
 /**
 * Renders a <Button /> component
-* @param  {object}  [props] - Button props
+* @param  {object}  props - Button props
 * @param  {string}  [props.text] - My button
 * @param  {boolean} [props.isActive] - is button active
 * @param  {string}  [props.className] - CSS class name

@@ -1,3 +1,25 @@
+// ───────Object overload───────
+// https://github.com/BeyondCodeBootcamp/jsdoc-typescript-starter
+
+/**
+ * @typedef Foo
+ * @property {string} foo
+ */
+ 
+/**
+ * @typedef Bar
+ * @property {string} bar
+ */
+
+/** @type {Foo & Bar} */
+var foobar = { foo: "foo", bar: "bar" };
+
+/** @typedef {Foo & Bar} FooBar */
+/** @type {FooBar} */
+var foobar = { foo: "foo", bar: "bar" };
+
+
+// ───────────────────────
 
 // via https://github.com/microsoft/TypeScript/issues/25590#issuecomment-942782630
 /**
@@ -31,6 +53,7 @@ function overloaded(...args) {
 overloaded(1, '2')
 overloaded(true, {})
 overloaded({ name: 'bob', age: 11 }, true)
+
 
 
 

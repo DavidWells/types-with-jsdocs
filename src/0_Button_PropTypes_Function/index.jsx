@@ -17,7 +17,7 @@ const defaultProps = {
   foo: 42
 }
 
-function ButtonWithPropTypes({ children }) {
+export default function ButtonWithPropTypes({ children }) {
   return (
     <button>
       {children}

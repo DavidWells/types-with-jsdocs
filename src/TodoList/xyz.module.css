@@ -1,9 +1,15 @@
 .test {
   background: blue;
+  
   .other {
     background: green;
   }
 }
+
 .coolBean {
   color: purple;
+}
+
+.no {
+  color: blue;
 }

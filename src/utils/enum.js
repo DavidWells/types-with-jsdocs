@@ -43,6 +43,18 @@ const MathFuncs = {
   sub1: (n) => n - 1,
 };
 
+/**
+ * Enum for tri-state values.
+ * @readonly
+ * @enum {number}
+ */
+export const triState = {
+  /** The true value */
+  TRUE: 1,
+  FALSE: -1,
+  /** @type {boolean} */
+  MAYBE: true,
+};
 
 /**
  * String enum function example
@@ -57,6 +69,47 @@ const TestFuncs = {
 };
 
 TestFuncs.two;
+
+// ────────Using type defs ───────────────
+
+/**
+ * @typedef {Object} Food
+ * @property {string} name - What the food should be called
+ * @property {('meat' | 'veggie' | 'other')} type - The food's type
+ */
+
+/** @type Food */
+export const food = {
+  name: 'beef',
+  type: 'meat',
+}
+
+// ────────Using literal type arrays ───────────────
+
+/**
+ * Tuple with literal type
+ * @type {[
+  '12px',
+  '16px',
+  '20px',
+  '24px',
+]}
+ */
+const sizesScale = [
+  '12px', // 0
+  '16px', // 1
+  '20px', // 2
+  '24px', // 3
+];
+
+// The literal types will follow sub-sequence assignment like so:
+const sizes = {
+  ...sizesScale,
+  xs: sizesScale[0],
+  sm: sizesScale[1],
+  md: sizesScale[2],
+  lg: sizesScale[3],
+}
 
 // ────────Using typedefs ───────────────
 
