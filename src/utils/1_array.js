@@ -78,3 +78,38 @@ function totalAmount(articles) {
 function addVAT(article) {
   return article.price + 1
 }
+
+// ───────────────────────
+// an array of objects with some known and some unknown properties.
+// https://twitter.com/Stegosource/status/1395421390698733570
+
+/**
+ * @typedef {Array<{
+ *   known: number
+ *   yep: boolean
+ *   defo: string
+ *  }
+ *  &
+ *   Record<any, any>
+ *  >
+ * } MyCustomArray
+ */
+
+/** @type {MyCustomArray} */
+const myArray = [{ known: 2, yep: true, defo: 'yay', xyz: '123' }]
+
+
+// ───────Array of arrays────────────────
+// https://stackoverflow.com/questions/66912667/whats-the-best-way-to-document-an-array-of-arrays-of-arrays-using-jsdoc
+
+/** @typedef {[string, number, string]} MyTuple */
+
+/** @type {Array<Array<MyTuple>>} */
+const abczyb = [ 
+  [ 
+    ['aqua-160', 160, 'PreCleaning'], 
+    ['aqua-260', 260, 'PreCleaning']], 
+  [ 
+    ['aqua-360', 360, 'PostCleaning']
+  ]
+];

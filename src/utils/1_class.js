@@ -1,3 +1,32 @@
+
+// ───────────────────────
+// https://github.com/giltayar/jsdoc-typing/blob/master/src/class.js
+
+class PersonClass {
+  /**@type {string}*/
+  firstName
+  /**@type {string}*/
+  lastName
+
+  /**
+   * @param {string} firstName
+   * @param {string} lastName
+   */
+  constructor(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+  }
+
+  /**
+   * @returns {string}
+   */
+  fullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+const person = new PersonClass('bob', 'smith')
+
 // https://fettblog.eu/typescript-jsdoc-superpowers/
 
 /**

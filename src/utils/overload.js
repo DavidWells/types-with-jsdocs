@@ -134,6 +134,79 @@ obj.monaLisa.overdrive = true;
 MonaLisa.prototype.monaLisa.overdrive = true;
 
 
+
+// ───────────────────────
+// https://github.com/micromark/micromark/blob/2b1fafb5f3ad0d1c9329ffbc80be1cbd411f5468/packages/micromark/dev/index.js#L12-L30
+
+/**
+ * @typedef {'ascii'|'utf8'|'utf-8'|'utf16le'|'ucs2'|'ucs-2'|'base64'|'latin1'|'binary'|'hex'} Encoding
+ *   Encodings supported by the buffer class.
+ *   This is a copy of the typing from Node, copied to prevent Node globals from
+ *   being needed.
+ *   Copied from: <https://github.com/DefinitelyTyped/DefinitelyTyped/blob/a2bc1d8/types/node/globals.d.ts#L174>
+ *
+ * @typedef {string|Uint8Array} Value
+ *   Contents of the file.
+ *   Can either be text, or a `Buffer` like structure.
+ */
+
+/**
+ * @typedef {Record<string, Record<string, unknown>>} Extension
+ *   A syntax extension changes how markdown is tokenized.
+ *   See: <https://github.com/micromark/micromark#syntaxextension>
+ */
+
+/**
+ * @typedef ParseOptions
+ *   Parse options.
+ * @property {Extension[]} [extensions] Array of syntax extensions
+ */
+
+/**
+ * @typedef CompileOptions
+ *   Compile options
+ * @property {'\r'|'\n'|'\r\n'} [defaultLineEnding]
+ *   Value to use for line endings not in `doc` (`string`, default: first line
+ *   ending or `'\n'`).
+ * @property {boolean} [allowDangerousHtml=false]
+ *   Whether to allow embedded HTML (`boolean`, default: `false`).
+ * @property {boolean} [allowDangerousProtocol=false]
+ */
+ 
+/**
+ * @typedef {ParseOptions & CompileOptions} Options
+ */
+
+/**
+ * @param value Markdown to parse (`string` or `Buffer`).
+ * @param [encoding] Character encoding to understand `value` as when it’s a `Buffer` (`string`, default: `'utf8'`).
+ * @param [options] Configuration
+ */
+export const micromark =
+  /**
+   * @type {(
+   *   ((value: Value, encoding: Encoding, options?: Options) => string) &
+   *   ((value: Value, options?: Options) => string)
+   * )}
+   */
+  (
+    /**
+     * @param {Value} value
+     * @param {Encoding} [encoding]
+     * @param {Options} [options]
+     */
+    function (value, encoding, options) {
+      if (typeof encoding !== 'string') {
+        options = encoding
+        encoding = undefined
+      }
+
+      return value
+    }
+  )
+
+// ───────────────────────
+
 // /**
 //  * Does something
 //  * @callback foo_overload1

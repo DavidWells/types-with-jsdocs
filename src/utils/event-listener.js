@@ -11,7 +11,7 @@
  */
 
 /**
- * @typedef {Object} Options
+ * @typedef {Object} MyOptions
  * @prop {boolean} [once]
  */
 
@@ -33,7 +33,7 @@
  * @param {Selector}  elements  - Element(s) to attach event(s) to.
  * @param {EventType} eventType - Event(s) to listen to 
  * @param {Function}  handler - Function to fire
- * @param {Options}   [options] - Event listener options
+ * @param {MyOptions}   [options] - Event listener options
  * @returns {RemoveListener}
  */
 
