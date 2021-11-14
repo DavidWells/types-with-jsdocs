@@ -103,3 +103,68 @@ function coolio(e) {
  num = id('string'); // Type warning.
 
  num = id(1234); // Type safe.
+
+ // https://twitter.com/DerekNguyen10/status/1404307885635477507/photo/1
+
+
+// ───────────────────────
+// https://github.com/chunjin666/jsdoc-learning/blob/master/src/01-types/06-%40template.js
+
+// You can use the @template tag to declare a type parameter, which can make the function, class, and type generic
+
+/**
+ * @template T
+ * @param { T } x-a generic parameter that flows to the return type
+ * @return {T}
+ */
+function id(x) {
+  return x;
+}
+
+const ta = id('string');
+const tb = id(123);
+const tc = id({});
+
+// You can use multiple tags to declare multiple type parameters
+
+/**
+ * @template T,U,V
+ * @template W,X
+ */
+
+// You can specify a type restriction before the type parameter name
+
+/**
+ * @template {string} K - must be a string or character literal
+ * @template {{ execute(s: string): string }} Executable - there must be an execute function, the parameters and return values ​​are strings
+ * @param { K } key
+ * @param {Executable} executable
+ */
+function execute(key, executable) {
+  executable.execute(key);
+}
+
+// Another example of specifying type restrictions.
+/**
+ * @typedef {{a: string, b: number}} BaseOption
+ */
+/**
+ * @template {{c: boolean}} T
+ * @typedef {BaseOption & T} MergeOption
+ */
+
+/**
+ * @type {MergeOption<{c: boolean, d: number}>}
+ */
+const option = { };
+option.c
+option.d
+
+// You can assign a default value to the type parameter in this way, which is not supported by the editor. . .
+
+/** @template [T=object] */
+class Cache {
+  /** @param {T} initial */
+  constructor(T) {}
+}
+let c = new Cache();

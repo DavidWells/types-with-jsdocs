@@ -8,7 +8,7 @@
  */
 export const user = {
   email: 's',
-};
+}
 
 // Object with nested values
 
@@ -170,7 +170,7 @@ const appUser = {
   stuff: {
     hi: 'there'
   },
-   friends: [{
+  friends: [{
     given_name: 'bob',
     family_name: 'smith',
     favorite_book: 'harry potter',
@@ -190,4 +190,22 @@ const appUser = {
 const x = {
   foobar: 1,
   no: 2
+}
+
+
+// ───────────────────────
+// Partial object with optional keys via {Partial}
+
+/**
+ * My object
+ *
+ * @typedef {Object} MyObjectWithOptionalParams
+ * @property {string[]} cases     A list of specific cases it should validated against.
+ * @property {string[]} scopes    A list of specific scopes it should use to valdiate the error.
+ * @property {?string}  fallback  A fallback message in case the error can't be parsed. If not specified, the returned error will maintain the original message.
+ */
+
+/** @type {Partial<MyObjectWithOptionalParams>} */
+const objectWithOptionalKeys = {
+  cases: ['xyz']
 }

@@ -104,8 +104,11 @@ const myArray = [{ known: 2, yep: true, defo: 'yay', xyz: '123' }]
 
 /** @typedef {[string, number, string]} MyTuple */
 
+/** @type {MyTuple} */
+const single = ['aqua-160', 160, 'PreCleaning']
+
 /** @type {Array<Array<MyTuple>>} */
-const abczyb = [ 
+const nestedArrays = [ 
   [ 
     ['aqua-160', 160, 'PreCleaning'], 
     ['aqua-260', 260, 'PreCleaning']], 
@@ -113,3 +116,21 @@ const abczyb = [
     ['aqua-360', 360, 'PostCleaning']
   ]
 ];
+
+// ────────Conditional pair tuple ───────────────
+// https://github.com/jsdoc/jsdoc/issues/1703#issuecomment-898203535
+
+/**
+ * @template IType
+ * @template FnReturnType
+ * @typedef {[IType, FnReturnType]} ConditionPair
+ */
+
+const state = 'foo'
+function set_state() {}
+
+/** @type ConditionPair<string, function> */
+const tuple = [state, set_state]
+
+/** @type ConditionPair<string, number> */
+const tupleTwo = [state, 1]

@@ -153,3 +153,135 @@ function getElement(selector, {
 
   })
 }
+
+
+// ───────────────────────
+// https://github.com/aminya/jsdoc2flow/blob/master/test/fixtures/annotated/test2.js#L5
+
+/**
+ * Function 1
+ *
+ * @param {object} obj
+ * @param {string} obj.a
+ * @param {string} obj.b
+ * @param {object} obj.c
+ * @param {object=} obj.d
+ * @param {object=} obj.e
+ * @returns {number}
+ */
+const fn1 = ({ a, b, c, d, e }) => {
+  return 1
+}
+
+
+// ───────────────────────
+// https://github.com/andreidmt/tpl-ts-jsdoc/blob/master/src/hello-world.js#L6
+
+/**
+ * @typedef  {Object} SayHelloFnReturn
+ *
+ * @property {string} beep
+ * @property {string} boop
+ */
+
+/**
+ * Function with types infered from docs, 2 birds in hand.
+ *
+ * @param   {Object}           [props={}]
+ * @param   {"lorem"|"dolor"}  [props.foo="lorem"]
+ * @param   {string}           [props.bar="ipsum"]
+ *
+ * @returns {SayHelloFnReturn}
+ */
+const sayOy = ({ foo = "lorem", bar = "ipsum" } = {}) => ({
+  beep: `oy ${foo}`,
+  boop: `oy ${bar}`,
+})
+
+const robotSays = sayOy({ foo: "dolor" })
+
+
+// ───────────────────────
+// https://github.com/homer0/parserror/blob/c12b20e3a321e1e01f41178eceb1d3210991d40f/src/parserror.js#L240
+
+
+/**
+ * An object with a signature similar to an {@link Error} that {@link Parserror} can
+ * parse.
+ *
+ * @typedef {Object} ParserrorErrorObject
+ * @property {string} message  The error message.
+ */
+
+/**
+ * The options that can be used to customize how {@link Parserror#parse} works.
+ *
+ * @typedef {Object} ParserrorParseOptions
+ * @property {string[]} cases     A list of specific cases it should validated against.
+ * @property {string[]} scopes    A list of specific scopes it should use to valdiate the
+ *                                error.
+ * @property {?string}  fallback  A fallback message in case the error can't be parsed.
+ *                                If not specified, the returned error will maintain the
+ *                                original message.
+ */
+
+/**
+ * A custom version of `Error` so the Parserror can store the parsing parameters and some
+ * context information.
+ * 
+ * @augments Error
+ */
+class FormattedError extends Error {
+  /**
+   * @param {string} message
+   * The error message.
+   * @param {Object.<string, string> | string[]} [params={}]
+   * The parsed parameters Parserror. When parsing a case that uses named groups, the
+   * parameters are stored on an `object`; otherwise, they'll be an `array`.
+   * @param {?Object} [context=null]
+   * Any extra context information for the error.
+   */
+  constructor(message, params = {}, context = null) {
+    super(message);
+    /**
+     * The parsed parameters Parserror found. When parsing a case that uses named groups,
+     * the parameters are stored on an `object`; otherwise, they'll be an `array`.
+     *
+     * @type {Object.<string, string> | string[]}
+     * @todo Remove `Object.freeze`.
+     */
+    this.params = params;
+    /**
+     * Any extra context information for the error.
+     *
+     * @type {Object}
+     * @todo Remove `Object.freeze`.
+     */
+    this.context = Object.freeze(context || {});
+
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, this.constructor);
+    }
+  }
+}
+
+/**
+ * Parses and formats an error.
+ *
+ * @param {Error | string | ParserrorErrorObject} error
+ * The error to parse.
+ * @param {Partial<ParserrorParseOptions>} [options={}]
+ * Options to customize how the parsing is done.
+ * @returns {FormattedError}
+ * @throws {TypeError}
+ * If `error` is not an {@link Error}, a string or a {@link ParserrorErrorObject}.
+ */
+function parse(error, options = {}) {
+  const useOptions = {
+    cases: [],
+    scopes: [],
+    fallback: null,
+    ...options,
+  };
+  return new FormattedError('foobar', {}, { original: true });
+}

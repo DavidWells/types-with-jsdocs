@@ -17,3 +17,44 @@
 function sum(a, b) {
   return a + b
 }
+
+
+// ───────────────────────
+// https://github.com/yamadapc/jsdoctest/blob/master/test/test-file-captioned.js
+
+/**
+ * @example <caption>Integers</caption>
+ *   addMoreStuff(1, 2)
+ *   // => 3
+ *   addMoreStuff(3, 2)
+ *   // => 5
+ *
+ * @example <caption>Doubles</caption>
+ *   addMoreStuff(1.5, 2.5)
+ *   // => 4
+ */
+
+function addMoreStuff(x, y) {
+  return x + y;
+}
+
+// ───────────────────────
+// https://github.com/jaydenseric/jsdoc-md#example-content
+
+/**
+ * Displays a message in a native popup window.
+ * @kind function
+ * @name popup
+ * @param {string} message Message text.
+ * @example <caption>Say `Hello!` to the user.</caption>
+ * This usage:
+ *
+ * ```js
+ * popup('Hello!');
+ * ```
+ *
+ * Displays like this on macOS:
+ *
+ * ![Screenshot](https://octodex.github.com/images/yaktocat.png)
+ */
+const popup = (message) => alert(message);

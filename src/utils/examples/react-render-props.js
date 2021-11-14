@@ -19,18 +19,17 @@ function Toggle(props) {
   const [open, setOpen] = useState(false);
   return (
     <div>
-     <button type="button" onClick={() => setOpen(!open)}>
-      {" "}
+     <button onClick={() => setOpen(!open)}>
       Toggle
-      {" "}
      </button>
      {props.children({ open })}
     </div>
-  );
+  )
 }
+
 Toggle.propTypes = {
   children: PropTypes.func.isRequired
-};
+}
 
 
 function usage() {

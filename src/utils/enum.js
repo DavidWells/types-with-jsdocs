@@ -231,3 +231,129 @@ function dostuff(dealstage) {
     
   }
 }
+
+
+// ─────────Reference enum value in a typedef ──────────────
+// https://github.com/jsdoc/jsdoc/issues/1740#issuecomment-603123567
+// Broken
+
+/** @enum {number} */
+const TArticleRefineFilterType = {
+  /** @member {number} */
+  ByDepartment: 0,
+  /** @member {number} */
+  ByTag: 1
+}
+
+/**
+ * @typedef TArticleRefineFilterByDepartmentInfo
+ * @property {typeof TArticleRefineFilterType.ByDepartment} type
+ */
+
+/** @type TArticleRefineFilterByDepartmentInfo */
+const depInfo = {
+  type: 1 // Broken can be any number
+}
+
+
+// ───────────────────────
+// https://github.com/MrShoenel/orchestration-tools/blob/master/lib/JobQueue.js#L436
+
+/**
+ * @readonly
+ * @enum {Number}
+ */
+const JobQueueCapacityPolicy = {
+	/**
+	 * Ignore the policy, and keep on enqueueing items, regardless of
+	 * whether the maximum capacity is reached or not.
+	 */
+	Ignore: 0,
+	/**
+	 * When the maximum capacity is reached, new items added to the
+	 * queue will be silently discarded.
+	 */
+	Discard: 1,
+	/**
+	 * When enqueueing new items and the maximum capacity is already
+	 * reached, an Error is thrown.
+	 */
+	ThrowError: 2,
+};
+
+
+// ───────────────────────
+// https://github.com/chunjin666/jsdoc-learning/blob/master/src/03-enum/%40enum.js#L4
+
+/** @enum {number} */
+const  OrderState  =  {
+  NotPaid : 0 ,
+  Paid: 1,
+  Failure: 2,
+};
+
+/**
+ *
+ * @param {OrderState} state
+ */
+function checkOrderState(state) {
+  switch (state) {
+    case  OrderState.NotPaid :
+      // ...
+      break;
+    case OrderState.Paid:
+      // ...
+      break;
+    case OrderState.Failure:
+      // ...
+      break;
+    // default:
+    //   throw Error("invalid state")
+  }
+}
+
+checkOrderState(OrderState.NotPaid); // Ok
+
+
+// ------------------------------------------------------------------------------
+// You can also write the enumeration type as a more precise union type,
+
+/**
+ * @enum {'development' | 'staging' | 'production'}
+ */
+const EnvTypes = {
+  /** @type {'development'} */
+  Development: 'development',
+  /** @type {'staging'} */
+  Staging: 'staging',
+  /** @type {'production'} */
+  Production: 'production',
+};
+
+/**
+* @type {Record <EnvTypes, {baseURL: string, title ?: string}>}
+ */
+const AppConfig = {
+  [EnvTypes.Development] : { baseURL : '/dev' , title : 'xxx'  } ,
+  [EnvTypes.Staging] : { baseURL : '/stage' , title : 'yyy'  } ,
+  [EnvTypes.Production] : { baseURL : '/prod' , title : 'zzz'  } ,
+};
+
+/** @type {EnvTypes} */
+let env = 'staging';
+
+// The type of return value can be correctly inferred here
+function getAppConfigGlobal()  {
+  return AppConfig[env];
+}
+
+/**
+ * @param {EnvTypes} envType
+ * @returns 
+ */
+function getAppConfig(envType)  {
+  return AppConfig[envType];
+}
+
+const xyz = getAppConfig('production')
+console.log(xyz.baseURL)

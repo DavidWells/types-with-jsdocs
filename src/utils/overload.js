@@ -133,7 +133,9 @@ monaLisa.overdrive = true;
 obj.monaLisa.overdrive = true;
 MonaLisa.prototype.monaLisa.overdrive = true;
 
-
+/**
+ * 
+ */
 
 // ───────────────────────
 // https://github.com/micromark/micromark/blob/2b1fafb5f3ad0d1c9329ffbc80be1cbd411f5468/packages/micromark/dev/index.js#L12-L30
@@ -224,3 +226,34 @@ export const micromark =
 // function fooBarFunc(arg1, arg2) {
 
 // }
+
+
+// ------------------------------------------------------------------------------
+// JSDoc implements function overloading
+// https://github.com/microsoft/TypeScript/issues/25590
+// ------------------------------------------------------------------------------
+// https://github.com/chunjin666/jsdoc-learning/blob/master/src/01-types/07-function-overload.js
+// ------------------------------------------------------------------------------
+// method one:
+// ------------------------------------------------------------------------------
+/**
+ * @param {number} acc
+ * @param {number} cur
+ */
+const sumReducer = (acc, cur) => acc + cur;
+
+/**
+ * @type {{
+ * (nums: number[]): number
+ * (...nums: number[]): number
+ * }}
+ */
+const sum = (...nums) => {
+  if (Array.isArray(nums[0])) {
+    return nums[0].reduce(sumReducer, 0);
+  }
+  return /** @type {number[]} */ (nums).reduce(sumReducer, 0);
+};
+
+sum(1, 2, 3);
+sum([1, 2, 3]);
