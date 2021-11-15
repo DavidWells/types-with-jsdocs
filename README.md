@@ -44,6 +44,7 @@ function mapValues(object, mapFunction) {
 - [typesync](https://github.com/jeffijoe/typesync) Install missing TypeScript typings for dependencies in your package.json.
 - [type-coverage](https://github.com/plantain-00/type-coverage) A CLI tool to check type coverage for typescript code
 - [typescript-error-reporter-action](https://github.com/Gozala/typescript-error-reporter-action) GitHub Action to diagnose TypeScript errors and report the result on PR.
+- [Prettier for JSdoc](https://github.com/homer0/packages/tree/main/packages/public/prettier-plugin-jsdoc)
 
 ## VScode
 
@@ -105,7 +106,7 @@ function mapValues(object, mapFunction) {
 
 - A type detection utility for JavaScript https://github.com/sapphiredev/type / https://github.com/pkdev08/klasa-v13/blob/master/src/lib/util/Type.js
 
-- eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json
+- eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json + https://github.com/homer0/packages/tree/main/packages/personal/eslint-plugin
 - https://github.com/benawad/gen-env-types
 - https://github.com/jsdoc2md/jsdoc-to-markdown#readme
 - https://github.com/Surnet/swagger-jsdoc

@@ -21,6 +21,24 @@ const numbers = values(article, 'price', 'vat')
 const strings = values(article, 'title')
 const mixed = values(article, 'title', 'vat')
 
+// ───────────────────────
+// https://github.com/homer0/packages/blob/main/packages/public/prettier-plugin-jsdoc/src/fns/utils.js#L8
+
+/**
+ * Ensures a given object is an array.
+ *
+ * @param {T | T[]} obj  The object to validate.
+ * @returns {T[]}
+ * @template T
+ */
+const ensureArray = (obj) => {
+  if (Array.isArray(obj)) return obj
+  return [obj]
+}
+
+const arr1 = ensureArray('foo')
+const arr2 = ensureArray(true)
+
 
 // ───────────────────────
 // https://zenn.dev/asama/articles/0c66573e488b22
@@ -84,25 +102,25 @@ function coolio(e) {
   * @param {A} x
   * @return {A}
   */
- const id = (x) => x;
+ const idTwo = (x) => x;
 
  /** @type {string} */
- let str = '';
+ let strtwo = '';
 
  /** @type {number} */
- let num = 1;
+ let numtwo = 1;
 
- str = id(true); // Type warning.
+ strtwo = idTwo(true); // Type warning.
 
- str = id('string'); // Type safe.
+ strtwo = idTwo('string'); // Type safe.
 
- str = id(1234); // Type warning.
+ strtwo = idTwo(1234); // Type warning.
 
- num = id(true); // Type warning.
+ numtwo = idTwo(true); // Type warning.
 
- num = id('string'); // Type warning.
+ numtwo = idTwo('string'); // Type warning.
 
- num = id(1234); // Type safe.
+ numtwo = idTwo(1234); // Type safe.
 
  // https://twitter.com/DerekNguyen10/status/1404307885635477507/photo/1
 
@@ -163,8 +181,8 @@ option.d
 // You can assign a default value to the type parameter in this way, which is not supported by the editor. . .
 
 /** @template [T=object] */
-class Cache {
+class CustomCache {
   /** @param {T} initial */
   constructor(T) {}
 }
-let c = new Cache();
+let c = new CustomCache();
