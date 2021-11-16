@@ -22,3 +22,27 @@ export default function Button(props = {}) {
     </button>
   )
 }
+
+
+
+// https://www.javascriptjanuary.com/blog/autocomplete-in-react-using-jsdoc
+
+/**
+* Renders a <Button /> component
+* @param  {object} props
+* @param  {string} props.textColor - the color of the text in the button
+* @param  {string} props.bgColor - the background color of the button
+* @param  {React.ReactNode} [props.children] - component children;
+* @param  {React.CSSProperties} props.overrideStyles - used to set the CSS of the button
+*/
+export const ButtonTwo = ({ children, textColor, bgColor, overrideStyles = {} }) => (
+  <button
+    style={{
+      color: textColor,
+      backgroundColor: bgColor,
+      ...overrideStyles
+    }}
+  >
+    {children}
+  </button>
+)

@@ -70,6 +70,27 @@ const TestFuncs = {
 
 TestFuncs.two;
 
+// ───────────────────────
+// Enum into Array https://medium.com/@antonkrinitsyn/jsdoc-frequent-patterns-436dad6dbee1
+
+/**
+ * Type of player
+ * @typedef {'ally' | 'enemy'} PlayerType
+ */
+
+/**
+ * Team players
+ * @typedef Player
+ * @property {PlayerType} type
+ */
+
+/** @type {Player[]} */
+const players = [
+  {
+    type: 'enemy',
+  }
+]
+
 // ────────Using type defs ───────────────
 
 /**

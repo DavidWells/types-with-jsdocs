@@ -66,6 +66,7 @@ function mapValues(object, mapFunction) {
 - [DavidWells/jsdoc-parser: Updated fork of dox](https://github.com/DavidWells/jsdoc-parser)
 - [TSConfig.json reference](https://www.typescriptlang.org/tsconfig)
 - [Understand the use of JSDoc through code](https://github.com/chunjin666/jsdoc-learning)
+- [JSDoc & React. JSDoc is very versatile tool. It… | by Anton Krinitsyn | Medium](https://medium.com/@antonkrinitsyn/jsdoc-react-5e6c530880a0)
 - [jsdoc-templates-demo: demo of well-known jsdoc3 templates](https://github.com/cancerberoSgx/jsdoc-templates-demo) & [examples](https://cancerberosgx.github.io/jsdoc-templates-demo/demo/)
 - [Check your JS with TS](https://whistlr.info/2021/check-js-with-ts/)
 - [JSDoc & React](https://medium.com/@antonkrinitsyn/jsdoc-react-5e6c530880a0)
@@ -133,6 +134,7 @@ function mapValues(object, mapFunction) {
 
 - https://github.com/Ethan-Arrowood/lego-world-map-designer/blob/main/index.js
 - https://gitlab.com/jugglinmike/friend-off/-/blob/main/src/server/room.js
+- https://github.com/Kr1an/react-jsdoc-sample + https://github.com/Kr1an/jsdoc-react-express-sample/blob/master/src/Single.js
 - https://github.com/wooorm/f-ck
 - https://github.com/micromark/micromark/blob/edbfa7a2d358d3264bd4524e947698cd7f7b480f/packages/micromark-util-types/index.js
 - https://github.com/fenomas/noa/blob/master/src/index.js

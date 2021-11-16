@@ -27,3 +27,19 @@ const tsUnknown = 'unknown value';
 
 /** @type {PromiseLike<string>} */
 var promisedString = Promise.resolve('hi')
+
+// Enum into Array
+// https://medium.com/@antonkrinitsyn/jsdoc-frequent-patterns-436dad6dbee1
+/**
+ * @typedef {'ally' | 'enemy'} PlayerType
+ *
+ * @typedef Player
+ * @property {PlayerType} type
+ */
+
+/** @type {Player[]} */
+const players = [
+  {
+    type: 'ally',
+  }
+]
