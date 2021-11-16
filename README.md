@@ -142,3 +142,13 @@ function mapValues(object, mapFunction) {
 - https://github.com/MrShoenel/orchestration-tools + https://mrshoenel.github.io/orchestration-tools/
 - https://github.com/rubengomex/js-spotify-api/blob/master/src/index.js
 - https://github.com/homer0/parserror/blob/c12b20e3a321e1e01f41178eceb1d3210991d40f/src/parserror.js#L240
+
+
+## Using test code for docs
+
+- https://github.com/linear/linear/blob/bc39d23af232f9fdbe7df458b0aaa9554ca83c57/packages/sdk/src/_tests/readme.test.ts#L57-L70 + https://github.com/linear/linear/blob/94af540244864fbe466fb933256278e04e87513e/docs/markdown-magic.config.js + https://github.com/linear/linear/blob/94af540244864fbe466fb933256278e04e87513e/docs/transforms/code-section.js
+- Pull in sub sections of markdown to other files https://github.com/linear/linear/blob/93981d3a3db571e2f8efdce9f5271ea678941c43/packages/codegen-doc/README.md#L32
++ https://github.com/linear/linear/blob/93981d3a3db571e2f8efdce9f5271ea678941c43/docs/transforms/text-section.js + https://github.com/linear/linear/blame/bc39d23af232f9fdbe7df458b0aaa9554ca83c57/README.md#L42
+
+
+ 
