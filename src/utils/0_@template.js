@@ -16,3 +16,12 @@ class ErrorWithCause extends Error {
     // ...
   }
 }
+
+
+// ───────────────────────
+// https://github.com/microsoft/TypeScript/pull/45483
+
+/**
+ * @template {string} [T="hello"]
+ * @typedef {T} Foo
+ */

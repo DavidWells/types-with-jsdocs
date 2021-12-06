@@ -52,6 +52,9 @@ const color2 = [{ red: 111, green: 111, blue: 111 }];
  */
 let filePaths = [{ localPath: 'xyz', fullPath: 'abc' }];
 
+// Array with any type
+/** @type {Array} */
+var myArrayOfAnyType = ["children", true, 1, {}];
 
 // ────── Function returning an array of objects ─────────────────
 
@@ -134,3 +137,18 @@ const tuple = [state, set_state]
 
 /** @type ConditionPair<string, number> */
 const tupleTwo = [state, 1]
+
+
+// ───────────────────────
+// Read only array https://discord.com/channels/508357248330760243/813896878058897458/875389849547444265
+
+/**
+ * @param {TemplateStringsArray} strings
+ * @param {...string[]} expr
+ */
+const xyzThing = (strings, ...expr) => {
+  // strings.push('x') will error
+  return strings.map((x) => {
+    return x
+  })
+}

@@ -72,6 +72,12 @@ function neverReturn() {
 }
 
 /**
+ * @param {string} prefix 
+ * @returns {(baseStr: string) => string}
+ */
+const prependPrefix = (prefix) => (baseStr)=> `${prefix}${baseStr}`;
+
+/**
  * Function no returrn value https://fettblog.eu/typescript-jsdoc-superpowers/
  * @param {string} url
  * @param {(status: number, response?: string) => void} cb
@@ -285,3 +291,7 @@ function parse(error, options = {}) {
   };
   return new FormattedError('foobar', {}, { original: true });
 }
+
+parse('lol', {
+  cases: ['cool'],
+})
