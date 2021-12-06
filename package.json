@@ -7,6 +7,7 @@
     "vite": "vite",
     "prebuild": "npm run generate",
     "build": "tsc && vite build",
+    "build-no-types": "vite build",
     "build:types": "tcm src --camelCase",
     "build:vite": "tsc && vite build",
     "serve": "vite preview",
