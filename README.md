@@ -88,19 +88,41 @@ function mapValues(object, mapFunction) {
 - [andreidmt/tpl-ts-jsdoc: Plain JavaScript with types by leveraging TypeScript's JSDoc support.](https://github.com/andreidmt/tpl-ts-jsdoc)
 
 
+Doc parsers
+
 - https://github.com/yashag/jsdoctor/
 - https://github.com/jsdoc-type-pratt-parser/jsdoc-type-pratt-parser
 - https://github.com/hegemonic/catharsis
 - https://github.com/jsdoctypeparser/jsdoctypeparser
+- https://github.com/reactjs/react-docgen
+- https://github.com/syavorsky/comment-parser
+- https://api-extractor.com/pages/tsdoc/tag_example/
+
 - [hosseinmd/prettier-plugin-jsdoc: A prettier plugin for formatting Jsdoc.](https://github.com/hosseinmd/prettier-plugin-jsdoc)
 
+- https://github.com/vega/ts-json-schema-generator or https://github.com/horiuchi/dtsgenerator TypeScript d.ts file generator from JSON Schema file
+- https://github.com/YousefED/typescript-json-schema
+
+## Extra imported types
+
+- https://github.com/krzkaczor/ts-essentials
+- https://github.com/millsp/ts-toolbelt
+- https://github.com/sindresorhus/type-fest
+- https://github.com/alii/typestr
+- https://github.com/ghoullier/awesome-template-literal-types
 
 
 ## Runtime type checkers
 
 - https://github.com/brielov/typed
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
-- https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod
+- https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
+- https://github.com/pelotom/runtypes
+- https://github.com/vedantroy/typecheck.macro
+- https://github.com/sindresorhus/is + https://github.com/sindresorhus/ts-extras
+- https://github.com/shigma/schemastery
+- https://github.com/yona3/typescanner
+- https://github.com/imbrn/v8n
 
 
 ## Msc
@@ -115,6 +137,7 @@ function mapValues(object, mapFunction) {
 - Converts from JSON Schema to JSDoc https://github.com/n3ps/json-schema-to-jsdoc or https://github.com/mizuka-wu/json-schema-to-jsdoc/blob/master/src/plugins/jsonschema2jsdoc.js
 - https://github.com/jsdoc2md/jsdoc-api
 - https://github.com/stereobooster/type-o-rama
+- https://github.com/LinbuduLab/json-to-type-graphql JSON / Object / Request ---> TypeGraphQL Class!
 - https://github.com/develar/ts2jsdoc - Generate JSDoc from Typescript
 - https://github.com/jonschlinkert/parse-comments Parse JavaScript code comments.
 - https://github.com/jonschlinkert/tokenize-comment
@@ -122,12 +145,22 @@ function mapValues(object, mapFunction) {
 - https://github.com/heavenshell/ts-lehre
 - Clean theme https://github.com/cdaringe/jsdock
 - https://github.com/homer0/jsdoc-ts-utils/
+- https://github.com/vytenisu/npm-dts Generate index.d.ts file
 - https://github.com/yashag/jsdoctor A smart jsdoc generator
 
+- Remove typescript types https://github.com/cyco130/detype
+- Object to schema https://github.com/unjs/untyped
+- Generate TS types from sql schema https://github.com/vramework/schemats
 
 - Babel traverse mobx to jsdoc https://github.com/Feverqwe/mst-jsdoc-gen/blob/master/getJsDoc.js
-- https://github.com/zacanger/jsdoctap Test runner for doctests using JSDoc examples and node-tap. or https://github.com/TechQuery/test-example/blob/master/source/TestFile.js
+- https://github.com/zacanger/jsdoctap Test runner for doctests using JSDoc examples and node-tap. or https://github.com/TechQuery/test-example/blob/master/source/TestFile.js OR https://github.com/kiwicopple/doctest-js
+- Tool to generate a single bundle of dts https://github.com/timocov/dts-bundle-generator
+- Typescript for CSS modules https://github.com/mrmckeb/typescript-plugin-css-modules
+- OpenAPI to TS https://github.com/drwpow/openapi-typescript
 
+- https://github.com/typescript-cheatsheets/react
+
+- https://github.com/documentationjs/documentation
 
 
 ## Examples
@@ -142,6 +175,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/MrShoenel/orchestration-tools + https://mrshoenel.github.io/orchestration-tools/
 - https://github.com/rubengomex/js-spotify-api/blob/master/src/index.js
 - https://github.com/homer0/parserror/blob/c12b20e3a321e1e01f41178eceb1d3210991d40f/src/parserror.js#L240
+- https://github.com/knockaway/loan-calculator/blob/master/lib/calculate-apr.js#L5-L19
 
 
 ## Using test code for docs
