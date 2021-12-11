@@ -24,7 +24,7 @@ var foobar = { foo: "foo", bar: "bar" };
 
 // A Naive Solution
 /**
- * @param {string | number} input 
+ * @param {string | number} input
  * @returns {string | number}
  */
 function double(input) {
@@ -113,12 +113,12 @@ const obj = {
 };
 
 class MonaLisa {
-    /** @type {Gioconda} */
-    monaLisa = (
-    /** @param {string|boolean} sb */
-    (sb) => {
-        return typeof sb === 'string' ? 1 : 2;
-    })
+  /** @type {Gioconda} */
+  monaLisa = (
+  /** @param {string|boolean} sb */
+  (sb) => {
+      return typeof sb === 'string' ? 1 : 2;
+  })
 }
 
 /** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
@@ -240,7 +240,7 @@ export const micromark =
  * @param {number} acc
  * @param {number} cur
  */
-const sumReducer = (acc, cur) => acc + cur;
+const sumReducer = (acc, cur) => acc + cur
 
 /**
  * @type {{
@@ -250,10 +250,10 @@ const sumReducer = (acc, cur) => acc + cur;
  */
 const sum = (...nums) => {
   if (Array.isArray(nums[0])) {
-    return nums[0].reduce(sumReducer, 0);
+    return nums[0].reduce(sumReducer, 0)
   }
-  return /** @type {number[]} */ (nums).reduce(sumReducer, 0);
+  return /** @type {number[]} */ (nums).reduce(sumReducer, 0)
 };
 
-sum(1, 2, 3);
-sum([1, 2, 3]);
+sum(1, 2, 3)
+sum([1, 2, 3])

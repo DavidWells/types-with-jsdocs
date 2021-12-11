@@ -123,7 +123,7 @@ Doc parsers
 - https://github.com/shigma/schemastery
 - https://github.com/yona3/typescanner
 - https://github.com/imbrn/v8n
-
+- https://github.com/d-kimuson/type-predicates-generator
 
 ## Msc
 

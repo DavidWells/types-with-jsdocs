@@ -8,6 +8,7 @@ yarn-error.log*
 _misc
 misc/structured-types
 # Auto generated zod files
+src/__generated/**/**
 src/**/**/*.validate.js
 
 # Ignore auto generated json schema files

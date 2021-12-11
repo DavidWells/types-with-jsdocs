@@ -23,5 +23,5 @@ const bozo = {
  */
 const bozoz = {
   myprop: 'Bozo the Clown',
-  id: 'xyxyx'
+  id: 'xyxyx',
 }

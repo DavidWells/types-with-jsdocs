@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 // https://gist.github.com/hrdtbs/f7e567c0738725a16a9de7326dc11127
 const btn = document.createElement("button");
-/** @type {Element} */ (btn).setAttribute("disabled", "true");
+/** @type {Element} */ (btn).setAttribute("disabled", "true")
 
 
 /**
@@ -10,7 +10,7 @@ const btn = document.createElement("button");
  * @typedef {{firstName: string, lastName: string}} CoolType
  */
 
-const qwerty = /** @type {CoolType} */({ firstName: 'y', lastName: 'x'});
+const qwerty = /** @type {CoolType} */({ firstName: 'y', lastName: 'x'})
 
 // ───────────────────────
 // https://twitter.com/karlhorky/status/1409074665209925632
