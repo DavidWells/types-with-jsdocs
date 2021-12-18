@@ -45,6 +45,7 @@ function mapValues(object, mapFunction) {
 - [type-coverage](https://github.com/plantain-00/type-coverage) A CLI tool to check type coverage for typescript code
 - [typescript-error-reporter-action](https://github.com/Gozala/typescript-error-reporter-action) GitHub Action to diagnose TypeScript errors and report the result on PR.
 - [Prettier for JSdoc](https://github.com/homer0/packages/tree/main/packages/public/prettier-plugin-jsdoc)
+- [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
 
 ## VScode
 
@@ -117,6 +118,7 @@ Doc parsers
 - https://github.com/brielov/typed
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
+- Tiny zod https://github.com/davidmdm/myzod
 - https://github.com/pelotom/runtypes
 - https://github.com/vedantroy/typecheck.macro
 - https://github.com/sindresorhus/is + https://github.com/sindresorhus/ts-extras
@@ -124,11 +126,17 @@ Doc parsers
 - https://github.com/yona3/typescanner
 - https://github.com/imbrn/v8n
 - https://github.com/d-kimuson/type-predicates-generator
+- https://github.com/milesj/optimal
+- https://github.com/jquense/yup
+- https://github.com/sideway/joi
+- https://github.com/drummer1992/sito
+- https://github.com/vitalets/micro-schema
+
 
 ## Msc
 
 - A type detection utility for JavaScript https://github.com/sapphiredev/type / https://github.com/pkdev08/klasa-v13/blob/master/src/lib/util/Type.js
-
+- Zod to TS https://github.com/sachinraja/zod-to-ts
 - eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json + https://github.com/homer0/packages/tree/main/packages/personal/eslint-plugin
 - https://github.com/benawad/gen-env-types
 - https://github.com/jsdoc2md/jsdoc-to-markdown#readme
@@ -157,6 +165,8 @@ Doc parsers
 - Tool to generate a single bundle of dts https://github.com/timocov/dts-bundle-generator
 - Typescript for CSS modules https://github.com/mrmckeb/typescript-plugin-css-modules
 - OpenAPI to TS https://github.com/drwpow/openapi-typescript
+- protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
+- Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
 
 - https://github.com/typescript-cheatsheets/react
 
