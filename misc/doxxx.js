@@ -72,8 +72,31 @@ class UserAccount {
 }
 `
 
-const filePath = path.resolve(__dirname, '../src/1_Button_SimpleJSdoc/index.jsx')
-const fileCode = fs.readFileSync(filePath, 'utf-8')
+var code = `
+/**
+* Renders a <ButtonTwo /> component
+* @param  {Object} props
+* @param  {String} props.textColor - the color of the text in the button
+* @param  {String} props.bgColor - the background color of the button
+* @param  {React.ReactNode} [props.children] - component children;
+* @param  {React.CSSProperties} props.overrideStyles - used to set the CSS of the button
+* @return {React.ReactElement} - React component
+*/
+export const ButtonTwo = ({ children, textColor, bgColor, overrideStyles = {} }) => (
+  <button
+    style={{
+      color: textColor,
+      backgroundColor: bgColor,
+      ...overrideStyles
+    }}
+  >
+    {children}
+  </button>
+)
+`
+
+// const filePath = path.resolve(__dirname, '../src/1_Button_SimpleJSdoc/index.jsx')
+// const fileCode = fs.readFileSync(filePath, 'utf-8')
 const obj = dox.parseComments(code);
 const { inspect } = require('util')
 console.log('result')

@@ -1,21 +1,19 @@
+const fs = require('fs')
 const path = require('path')
 const { inspect } = require('util')
 const { parseFiles } = require('@structured-types/api');
 const propTypesPlugin = require('@structured-types/prop-types-plugin')
 const reactPlugin = require('@structured-types/react-plugin');
 
-// const filePath = './parser-test.js'
-// const filePath = path.resolve(__dirname, 'src/0_Button_PropTypes_Function/index.jsx')
-// const filePath = path.resolve(__dirname, 'src/1_Button_JSDoc_Simple/index.jsx')
-// const filePath = path.resolve(__dirname, 'src/2_Button_JSDoc_TypeDef_Function/index.jsx')
-// const filePath = path.resolve(__dirname, 'src/2.1_Button_JSDoc_Function_Extend/index.jsx')
-// const filePath = path.resolve(__dirname, 'src/3_Button_JSDoc_TypeDef_Class/index.jsx')
-const filePath = path.resolve(__dirname, 'src/4_Button_JSDoc_ImportedTypes/index.jsx')
-// const filePath = path.resolve(__dirname, 'src/5_Button_JSDoc_ImportedTypes_React/index.jsx')
-
-const docs = parseFiles([filePath], {
-  plugins: [propTypesPlugin, reactPlugin],
-});
+let filePath
+// filePath = './parser-test.js'
+// filePath = path.resolve(__dirname, 'src/0_Button_PropTypes_Function/index.jsx')
+filePath = path.resolve(__dirname, 'src/1_Button_JSDoc_Simple/index.jsx')
+// filePath = path.resolve(__dirname, 'src/2_Button_JSDoc_TypeDef_Function/index.jsx')
+// filePath = path.resolve(__dirname, 'src/2.1_Button_JSDoc_Function_Extend/index.jsx')
+// filePath = path.resolve(__dirname, 'src/3_Button_JSDoc_TypeDef_Class/index.jsx')
+// filePath = path.resolve(__dirname, 'src/4_Button_JSDoc_ImportedTypes/index.jsx')
+// filePath = path.resolve(__dirname, 'src/5_Button_JSDoc_ImportedTypes_React/index.jsx')
 
 // https://github.com/ccontrols/structured-types/blob/a65a732f24de298bbde48d27ee9f17c94ba985b5/packages/api/src/types.ts#L34
 const PropKind = {
@@ -54,11 +52,11 @@ const kindMap = Object.keys(PropKind).reduce((acc, key) => {
 
 console.log('kindMap', kindMap)
 
-const getKindNamex = (kind) => {
+const getKindByNumber = (kind) => {
   return kindMap[kind]
-};
+}
 
-const kindEntries = Object.entries(PropKind);
+const kindEntries = Object.entries(PropKind)
 console.log('kindEntries', kindEntries)
 const getKindName = (kind) => {
   const strKind = kind ? kind.toString() : 'unknown';
@@ -66,24 +64,17 @@ const getKindName = (kind) => {
   const found = kindEntries.find(([_, v]) => {
     console.log('v', v)
     return v.toString() === strKind;
-  });
+  })
   return found ? found[0] : undefined;
-};
+}
 
-console.log(getKindNamex(1))
-
-console.log(inspect(docs, {showHidden: false, depth: null}))
-
-const xyz = Object.keys(docs).map((key) => {
-  return mapper(docs[key])
-})
-
-console.log('xyz')
-console.log(inspect(xyz, {showHidden: false, depth: null}))
+// console.log(getKindName(1))
+// console.log(getKindByNumber(1))
 
 function mapper(obj) {
   if (obj && typeof obj === 'object' && obj.kind) {
-    obj.kindType = kindMap[obj.kind]
+    obj.kindType = obj.kind
+    obj.kind = kindMap[obj.kind]
     if (obj.properties) {
       obj.properties = obj.properties.map((prop) => {
         return mapper(prop)
@@ -98,6 +89,31 @@ function mapper(obj) {
       obj.returns = mapper(obj.returns)
     }
   }
- 
   return obj
 }
+
+console.log(fs.readFileSync(filePath, 'utf-8'))
+
+const rawDocs = parseFiles([filePath], {
+  plugins: [propTypesPlugin, reactPlugin],
+})
+
+// console.log('rawDocs')
+// console.log(inspect(rawDocs, {showHidden: false, depth: null}))
+
+const docs = Object.keys(rawDocs).map((key) => {
+  return mapper(rawDocs[key])
+})
+
+console.log('docs')
+// console.log(docs[0].parameters[0].properties)
+// console.log(inspect(docs, {showHidden: false, depth: null}))
+
+/* Log them */
+docs.forEach((doc) => {
+  console.log(`${doc.name}`)
+  console.log('doc', doc)
+  doc.parameters.forEach((param) => {
+    console.log(`param "${param.name}" properties`, param.properties)
+  })
+})
