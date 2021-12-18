@@ -2,10 +2,10 @@ import React from 'react'
 
 /**
 * Renders a <Button /> component
-* @param  {object}  props - Button props
-* @param  {string}  [props.text] - My button
-* @param  {boolean} [props.isActive] - is button active
-* @param  {string}  [props.className] - CSS class name
+* @param  {Object}  props - Button props
+* @param  {String}  [props.text] - My button
+* @param  {Boolean} [props.isActive] - is button active
+* @param  {String}  [props.className] - CSS class name
 * @param  {React.ReactNode} [props.children] - component children;
 * @param  {React.CSSProperties} [props.style] - used to set the CSS of the button
 * @return {React.ReactElement} - React component
@@ -23,17 +23,16 @@ export default function Button(props = {}) {
   )
 }
 
-
-
-// https://www.javascriptjanuary.com/blog/autocomplete-in-react-using-jsdoc
+/* https://www.javascriptjanuary.com/blog/autocomplete-in-react-using-jsdoc */
 
 /**
-* Renders a <Button /> component
-* @param  {object} props
-* @param  {string} props.textColor - the color of the text in the button
-* @param  {string} props.bgColor - the background color of the button
+* Renders a <ButtonTwo /> component
+* @param  {Object} props
+* @param  {String} props.textColor - the color of the text in the button
+* @param  {String} props.bgColor - the background color of the button
 * @param  {React.ReactNode} [props.children] - component children;
 * @param  {React.CSSProperties} props.overrideStyles - used to set the CSS of the button
+* @return {React.ReactElement} - React component
 */
 export const ButtonTwo = ({ children, textColor, bgColor, overrideStyles = {} }) => (
   <button
@@ -46,3 +45,28 @@ export const ButtonTwo = ({ children, textColor, bgColor, overrideStyles = {} })
     {children}
   </button>
 )
+
+
+/**
+* Renders a <ButtonThree /> component
+* @param  {Object} buttonProps
+* @param  {String} buttonProps.textColor - the color of the text in the button
+* @param  {String} buttonProps.bgColor - the background color of the button
+* @param  {React.ReactNode} [buttonProps.children] - component children;
+* @param  {React.CSSProperties} buttonProps.overrideStyles - used to set the CSS of the button
+* @return {React.ReactElement} - React component
+*/
+export function ButtonThree (buttonProps) {
+  const { children, textColor, bgColor, overrideStyles = {} } = buttonProps
+  return (
+    <button
+      style={{
+        color: textColor,
+        backgroundColor: bgColor,
+        ...overrideStyles
+      }}
+    >
+      {children}
+    </button>
+  )
+}
