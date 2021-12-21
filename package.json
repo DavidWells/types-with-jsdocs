@@ -64,6 +64,7 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-no-unused-selectors": "^1.0.39",
     "ts-node": "^10.2.1",
+    "ts-to-jsdoc": "^1.1.2",
     "ts-to-zod": "^1.4.0",
     "type-coverage": "^2.18.0",
     "type-fest": "^1.2.3",
