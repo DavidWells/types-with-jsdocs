@@ -112,6 +112,11 @@ Doc parsers
 - https://github.com/alii/typestr
 - https://github.com/ghoullier/awesome-template-literal-types
 
+## Doc Generators
+
+- https://github.com/galvez/typejuice
+- https://github.com/jsdoc2md/jsdoc-to-markdown#readme
+- https://github.com/yashag/jsdoctor A smart jsdoc generator
 
 ## Runtime type checkers
 
@@ -131,7 +136,7 @@ Doc parsers
 - https://github.com/sideway/joi
 - https://github.com/drummer1992/sito
 - https://github.com/vitalets/micro-schema
-
+- https://github.com/daniel7grant/dvali
 
 ## Msc
 
@@ -139,7 +144,6 @@ Doc parsers
 - Zod to TS https://github.com/sachinraja/zod-to-ts
 - eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json + https://github.com/homer0/packages/tree/main/packages/personal/eslint-plugin
 - https://github.com/benawad/gen-env-types
-- https://github.com/jsdoc2md/jsdoc-to-markdown#readme
 - https://github.com/Surnet/swagger-jsdoc
 - JS doc to json schema https://github.com/brettz9/jsdoc-jsonschema
 - Converts from JSON Schema to JSDoc https://github.com/n3ps/json-schema-to-jsdoc or https://github.com/mizuka-wu/json-schema-to-jsdoc/blob/master/src/plugins/jsonschema2jsdoc.js
@@ -154,7 +158,6 @@ Doc parsers
 - Clean theme https://github.com/cdaringe/jsdock
 - https://github.com/homer0/jsdoc-ts-utils/
 - https://github.com/vytenisu/npm-dts Generate index.d.ts file
-- https://github.com/yashag/jsdoctor A smart jsdoc generator
 
 - Remove typescript types https://github.com/cyco130/detype
 - Object to schema https://github.com/unjs/untyped
@@ -168,6 +171,7 @@ Doc parsers
 - protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
 - Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
 
+- https://github.com/garbles/json-schema-multi-compiler
 - https://github.com/typescript-cheatsheets/react
 
 - https://github.com/documentationjs/documentation
