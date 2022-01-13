@@ -47,11 +47,10 @@ function mapValues(object, mapFunction) {
 - [Prettier for JSdoc](https://github.com/homer0/packages/tree/main/packages/public/prettier-plugin-jsdoc)
 - [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
 
-## VScode
+## VScode extensions
 
 - https://github.com/Perkovec/JSDocLivePreview
 - https://github.com/zachhardesty7/jsdoc-comment-toggler/blob/master/src/extension.ts
-
 
 
 ## Resources
@@ -59,12 +58,11 @@ function mapValues(object, mapFunction) {
 - [JSDoc typings: all the benefits of TypeScript, with none of the drawbacks](https://gils-blog.tayar.org/posts/jsdoc-typings-all-the-benefits-none-of-the-drawbacks/) + [giltayar/jsdoc-typing](https://github.com/giltayar/jsdoc-typing)
 - [Tips and tricks for working with types in JavaScript. voxpelli/types-in-js](https://github.com/voxpelli/types-in-js/discussions)
 - [JSDoc Cheatsheet](https://devhints.io/jsdoc)
-- [JSDoc Cheatsheet and Type Safety Tricks | Joshua's Docs](https://docs.joshuatz.com/cheatsheets/js/jsdoc/)
-- [JSDoc Cheatsheet | Jacob Paris](https://www.jacobparis.com/blog/jsdoc-cheatsheet)
+- [JSDoc Cheatsheet and Type Safety Tricks on Joshua's Docs](https://docs.joshuatz.com/cheatsheets/js/jsdoc/)
+- [JSDoc Cheatsheet by Jacob Paris](https://www.jacobparis.com/blog/jsdoc-cheatsheet)
 - [jsdoc-examples: Examples of using JSDoc to document JavaScript](https://github.com/bradtraversy/jsdoc-examples)
 - [Documentation and JSDoc](https://www.balena.io/blog/open-source-guide-1-documentation-and-jsdoc/)
 - [brettz9/awesome-jsdoc: A list of awesome jsdoc tools, resources, etc.](https://github.com/brettz9/awesome-jsdoc)
-- [DavidWells/jsdoc-parser: Updated fork of dox](https://github.com/DavidWells/jsdoc-parser)
 - [TSConfig.json reference](https://www.typescriptlang.org/tsconfig)
 - [Understand the use of JSDoc through code](https://github.com/chunjin666/jsdoc-learning)
 - [JSDoc & React. JSDoc is very versatile tool. It… | by Anton Krinitsyn | Medium](https://medium.com/@antonkrinitsyn/jsdoc-react-5e6c530880a0)
@@ -85,12 +83,13 @@ function mapValues(object, mapFunction) {
 - [Utilise JSDoc comment tags so that VSCode intellisense works great!](https://blog.shhdharmen.me/how-to-utilise-jsdoc-comment-tags-so-that-visual-studio-code-intellisense-works-great)
 - [JSDoc Crash Course 2021](https://codekila.com/jsdoc-crash-course-2021-javascript-documentation-generator/)
 - https://github.com/ipfs/aegir/blob/master/md/ts-jsdoc.md
-- [Highest Voted 'jsdoc' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/jsdoc)
 - [andreidmt/tpl-ts-jsdoc: Plain JavaScript with types by leveraging TypeScript's JSDoc support.](https://github.com/andreidmt/tpl-ts-jsdoc)
-
+- https://github.com/stereobooster/type-o-rama
+- [Highest Voted 'jsdoc' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/jsdoc)
 
 Doc parsers
 
+- https://github.com/ccontrols/structured-types
 - https://github.com/yashag/jsdoctor/
 - https://github.com/jsdoc-type-pratt-parser/jsdoc-type-pratt-parser
 - https://github.com/hegemonic/catharsis
@@ -99,11 +98,30 @@ Doc parsers
 - https://github.com/syavorsky/comment-parser
 - https://api-extractor.com/pages/tsdoc/tag_example/
 - https://github.com/eslint/doctrine
+- https://github.com/DavidWells/jsdoc-parser - Updated fork of dox
+- https://github.com/jonschlinkert/parse-comments Parse JavaScript code comments.
+- https://github.com/jonschlinkert/tokenize-comment
+- https://github.com/jsdoc2md/jsdoc-api - A programmatic interface for jsdoc3 with a few extra features
+
+## Formatters
 
 - [hosseinmd/prettier-plugin-jsdoc: A prettier plugin for formatting Jsdoc.](https://github.com/hosseinmd/prettier-plugin-jsdoc)
 
+## Conversion tools
+
 - https://github.com/vega/ts-json-schema-generator or https://github.com/horiuchi/dtsgenerator TypeScript d.ts file generator from JSON Schema file
 - https://github.com/YousefED/typescript-json-schema
+- https://github.com/LinbuduLab/json-to-type-graphql JSON / Object / Request ---> TypeGraphQL Class!
+- https://github.com/develar/ts2jsdoc - Generate JSDoc from Typescript
+- Object to schema https://github.com/unjs/untyped
+- Generate TS types from sql schema https://github.com/vramework/schemats
+- OpenAPI to TS https://github.com/drwpow/openapi-typescript
+- protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
+- Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
+- Typescript for CSS modules https://github.com/mrmckeb/typescript-plugin-css-modules
+- JS doc to json schema https://github.com/brettz9/jsdoc-jsonschema
+- https://github.com/Surnet/swagger-jsdoc - Generates swagger/openapi specification based on jsDoc comments and YAML files.
+- https://github.com/stereobooster/type-o-rama Directory of conversion tools
 
 ## Extra imported types
 
@@ -118,6 +136,8 @@ Doc parsers
 - https://github.com/galvez/typejuice
 - https://github.com/jsdoc2md/jsdoc-to-markdown#readme
 - https://github.com/yashag/jsdoctor A smart jsdoc generator
+- https://github.com/documentationjs/documentation
+
 
 ## Runtime type checkers
 
@@ -145,38 +165,21 @@ Doc parsers
 - A type detection utility for JavaScript https://github.com/sapphiredev/type / https://github.com/pkdev08/klasa-v13/blob/master/src/lib/util/Type.js
 - Zod to TS https://github.com/sachinraja/zod-to-ts
 - eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json + https://github.com/homer0/packages/tree/main/packages/personal/eslint-plugin
-- https://github.com/benawad/gen-env-types
-- https://github.com/Surnet/swagger-jsdoc
-- JS doc to json schema https://github.com/brettz9/jsdoc-jsonschema
+- https://github.com/benawad/gen-env-types - Generate a .d.ts and .env.example file from your .env file 
 - Converts from JSON Schema to JSDoc https://github.com/n3ps/json-schema-to-jsdoc or https://github.com/mizuka-wu/json-schema-to-jsdoc/blob/master/src/plugins/jsonschema2jsdoc.js
-- https://github.com/jsdoc2md/jsdoc-api
 - https://github.com/stereobooster/type-o-rama
-- https://github.com/LinbuduLab/json-to-type-graphql JSON / Object / Request ---> TypeGraphQL Class!
-- https://github.com/develar/ts2jsdoc - Generate JSDoc from Typescript
-- https://github.com/jonschlinkert/parse-comments Parse JavaScript code comments.
-- https://github.com/jonschlinkert/tokenize-comment
 - https://github.com/johnthecat/babel-plugin-jsdoc-runtime-typecheck/
 - https://github.com/heavenshell/ts-lehre
 - Clean theme https://github.com/cdaringe/jsdock
 - https://github.com/homer0/jsdoc-ts-utils/
 - https://github.com/vytenisu/npm-dts Generate index.d.ts file
-
 - Remove typescript types https://github.com/cyco130/detype
-- Object to schema https://github.com/unjs/untyped
-- Generate TS types from sql schema https://github.com/vramework/schemats
-
 - Babel traverse mobx to jsdoc https://github.com/Feverqwe/mst-jsdoc-gen/blob/master/getJsDoc.js
 - https://github.com/zacanger/jsdoctap Test runner for doctests using JSDoc examples and node-tap. or https://github.com/TechQuery/test-example/blob/master/source/TestFile.js OR https://github.com/kiwicopple/doctest-js
 - Tool to generate a single bundle of dts https://github.com/timocov/dts-bundle-generator
-- Typescript for CSS modules https://github.com/mrmckeb/typescript-plugin-css-modules
-- OpenAPI to TS https://github.com/drwpow/openapi-typescript
-- protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
-- Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
-
 - https://github.com/garbles/json-schema-multi-compiler
+- https://github.com/json-schema-faker/json-schema-faker
 - https://github.com/typescript-cheatsheets/react
-
-- https://github.com/documentationjs/documentation
 
 
 ## Examples
