@@ -37,23 +37,7 @@ function mapValues(object, mapFunction) {
 // @ts-nocheck
 ```
 
-## Tools
-
-- [JSON to JSDoc](https://transform.tools/json-to-jsdoc)
-- [quicktype](https://github.com/quicktype/quicktype) - Generate types and converters from JSON, Schema, and GraphQL
-- [typesync](https://github.com/jeffijoe/typesync) Install missing TypeScript typings for dependencies in your package.json.
-- [type-coverage](https://github.com/plantain-00/type-coverage) A CLI tool to check type coverage for typescript code
-- [typescript-error-reporter-action](https://github.com/Gozala/typescript-error-reporter-action) GitHub Action to diagnose TypeScript errors and report the result on PR.
-- [Prettier for JSdoc](https://github.com/homer0/packages/tree/main/packages/public/prettier-plugin-jsdoc)
-- [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
-
-## VScode extensions
-
-- https://github.com/Perkovec/JSDocLivePreview
-- https://github.com/zachhardesty7/jsdoc-comment-toggler/blob/master/src/extension.ts
-
-
-## Resources
+## Resources & Articles
 
 - [JSDoc typings: all the benefits of TypeScript, with none of the drawbacks](https://gils-blog.tayar.org/posts/jsdoc-typings-all-the-benefits-none-of-the-drawbacks/) + [giltayar/jsdoc-typing](https://github.com/giltayar/jsdoc-typing)
 - [Tips and tricks for working with types in JavaScript. voxpelli/types-in-js](https://github.com/voxpelli/types-in-js/discussions)
@@ -87,7 +71,9 @@ function mapValues(object, mapFunction) {
 - https://github.com/stereobooster/type-o-rama
 - [Highest Voted 'jsdoc' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/jsdoc)
 
-Doc parsers
+## Tools
+
+## Doc parsers
 
 - https://github.com/ccontrols/structured-types
 - https://github.com/yashag/jsdoctor/
@@ -106,6 +92,7 @@ Doc parsers
 ## Formatters
 
 - [hosseinmd/prettier-plugin-jsdoc: A prettier plugin for formatting Jsdoc.](https://github.com/hosseinmd/prettier-plugin-jsdoc)
+- [Prettier for JSdoc](https://github.com/homer0/packages/tree/main/packages/public/prettier-plugin-jsdoc)
 
 ## Conversion tools
 
@@ -122,6 +109,10 @@ Doc parsers
 - JS doc to json schema https://github.com/brettz9/jsdoc-jsonschema
 - https://github.com/Surnet/swagger-jsdoc - Generates swagger/openapi specification based on jsDoc comments and YAML files.
 - https://github.com/stereobooster/type-o-rama Directory of conversion tools
+- https://github.com/quicktype/quicktype - Generate types and converters from JSON, Schema, and GraphQL
+- [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
+- [JSON to JSDoc](https://transform.tools/json-to-jsdoc)
+
 
 ## Extra imported types
 
@@ -160,8 +151,16 @@ Doc parsers
 - https://github.com/daniel7grant/dvali
 - https://github.com/crinklesio/schemas
 
+## VScode extensions
+
+- https://github.com/Perkovec/JSDocLivePreview
+- https://github.com/zachhardesty7/jsdoc-comment-toggler/blob/master/src/extension.ts
+
 ## Msc
 
+- [typesync](https://github.com/jeffijoe/typesync) Install missing TypeScript typings for dependencies in your package.json.
+- [type-coverage](https://github.com/plantain-00/type-coverage) A CLI tool to check type coverage for typescript code
+- [typescript-error-reporter-action](https://github.com/Gozala/typescript-error-reporter-action) GitHub Action to diagnose TypeScript errors and report the result on PR.
 - A type detection utility for JavaScript https://github.com/sapphiredev/type / https://github.com/pkdev08/klasa-v13/blob/master/src/lib/util/Type.js
 - Zod to TS https://github.com/sachinraja/zod-to-ts
 - eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json + https://github.com/homer0/packages/tree/main/packages/personal/eslint-plugin
