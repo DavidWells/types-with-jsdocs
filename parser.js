@@ -7,8 +7,9 @@ const reactPlugin = require('@structured-types/react-plugin');
 
 let filePath
 // filePath = './parser-test.js'
-// filePath = path.resolve(__dirname, 'src/0_Button_PropTypes_Function/index.jsx')
-filePath = path.resolve(__dirname, 'src/1_Button_JSDoc_Simple/index.jsx')
+filePath = path.resolve(__dirname, 'src/0_Button_PropTypes_Class/index.jsx')
+filePath = path.resolve(__dirname, 'src/0_Button_PropTypes_Function/index.jsx')
+// filePath = path.resolve(__dirname, 'src/1_Button_JSDoc_Simple/index.jsx')
 // filePath = path.resolve(__dirname, 'src/2_Button_JSDoc_TypeDef_Function/index.jsx')
 // filePath = path.resolve(__dirname, 'src/2.1_Button_JSDoc_Function_Extend/index.jsx')
 // filePath = path.resolve(__dirname, 'src/3_Button_JSDoc_TypeDef_Class/index.jsx')
@@ -49,27 +50,10 @@ const kindMap = Object.keys(PropKind).reduce((acc, key) => {
   acc[PropKind[key]] = key
   return acc
 }, {})
-
 console.log('kindMap', kindMap)
-
-const getKindByNumber = (kind) => {
-  return kindMap[kind]
-}
 
 const kindEntries = Object.entries(PropKind)
 console.log('kindEntries', kindEntries)
-const getKindName = (kind) => {
-  const strKind = kind ? kind.toString() : 'unknown';
-  console.log('strKind', strKind)
-  const found = kindEntries.find(([_, v]) => {
-    console.log('v', v)
-    return v.toString() === strKind;
-  })
-  return found ? found[0] : undefined;
-}
-
-// console.log(getKindName(1))
-// console.log(getKindByNumber(1))
 
 function mapper(obj) {
   if (obj && typeof obj === 'object' && obj.kind) {
@@ -95,7 +79,10 @@ function mapper(obj) {
 console.log(fs.readFileSync(filePath, 'utf-8'))
 
 const rawDocs = parseFiles([filePath], {
-  plugins: [propTypesPlugin, reactPlugin],
+  plugins: [
+    { ...propTypesPlugin, filter: undefined }, 
+    reactPlugin
+  ],
 })
 
 // console.log('rawDocs')
@@ -107,13 +94,31 @@ const docs = Object.keys(rawDocs).map((key) => {
 
 console.log('docs')
 // console.log(docs[0].parameters[0].properties)
-// console.log(inspect(docs, {showHidden: false, depth: null}))
+console.log(inspect(docs, {showHidden: false, depth: null}))
 
 /* Log them */
 docs.forEach((doc) => {
   console.log(`${doc.name}`)
-  console.log('doc', doc)
-  doc.parameters.forEach((param) => {
+  console.log('doc', doc);
+  (doc.parameters || doc.properties).forEach((param) => {
     console.log(`param "${param.name}" properties`, param.properties)
   })
 })
+
+
+const getKindByNumber = (kind) => {
+  return kindMap[kind]
+}
+
+const getKindName = (kind) => {
+  const strKind = kind ? kind.toString() : 'unknown';
+  console.log('strKind', strKind)
+  const found = kindEntries.find(([_, v]) => {
+    console.log('v', v)
+    return v.toString() === strKind;
+  })
+  return found ? found[0] : undefined;
+}
+
+// console.log(getKindName(1))
+// console.log(getKindByNumber(1))

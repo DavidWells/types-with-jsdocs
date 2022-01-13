@@ -43,9 +43,9 @@
   },
   "devDependencies": {
     "@davidwells/config-postcss": "0.0.21",
-    "@structured-types/api": "^3.35.3",
-    "@structured-types/prop-types-plugin": "^3.35.3",
-    "@structured-types/react-plugin": "^3.35.3",
+    "@structured-types/api": "^3.40.9",
+    "@structured-types/prop-types-plugin": "^3.40.9",
+    "@structured-types/react-plugin": "^3.40.9",
     "@swc-node/register": "^1.3.3",
     "@testing-library/react": "^12.0.0",
     "@types/react": "^17.0.15",

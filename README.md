@@ -98,6 +98,7 @@ Doc parsers
 - https://github.com/reactjs/react-docgen
 - https://github.com/syavorsky/comment-parser
 - https://api-extractor.com/pages/tsdoc/tag_example/
+- https://github.com/eslint/doctrine
 
 - [hosseinmd/prettier-plugin-jsdoc: A prettier plugin for formatting Jsdoc.](https://github.com/hosseinmd/prettier-plugin-jsdoc)
 
@@ -137,6 +138,7 @@ Doc parsers
 - https://github.com/drummer1992/sito
 - https://github.com/vitalets/micro-schema
 - https://github.com/daniel7grant/dvali
+- https://github.com/crinklesio/schemas
 
 ## Msc
 
