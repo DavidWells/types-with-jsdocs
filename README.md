@@ -112,6 +112,9 @@ function mapValues(object, mapFunction) {
 - https://github.com/quicktype/quicktype - Generate types and converters from JSON, Schema, and GraphQL
 - [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
 - [JSON to JSDoc](https://transform.tools/json-to-jsdoc)
+- https://github.com/unjs/untyped
+- https://github.com/nijikokun/generate-schema Convert JSON Objects to MySQL, JSON Schema, Mongoose, Google BigQuery, Swagger
+
 
 
 ## Extra imported types
@@ -121,6 +124,10 @@ function mapValues(object, mapFunction) {
 - https://github.com/sindresorhus/type-fest
 - https://github.com/alii/typestr
 - https://github.com/ghoullier/awesome-template-literal-types
+- https://github.com/jrylan/json-schema-typed JSON schema type
+- https://github.com/jrylan/http-method-enum HTTP methods as a TypeScript enum.
+- https://github.com/jrylan/enum-utils/
+
 
 ## Doc Generators
 
@@ -128,7 +135,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/jsdoc2md/jsdoc-to-markdown#readme
 - https://github.com/yashag/jsdoctor A smart jsdoc generator
 - https://github.com/documentationjs/documentation
-
+- https://github.com/DavidWells/microsoft-api-documenter-example using `@microsoft/api-extractor` + `@microsoft/api-documenter`
 
 ## Runtime type checkers
 
@@ -141,6 +148,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/sindresorhus/is + https://github.com/sindresorhus/ts-extras
 - https://github.com/shigma/schemastery
 - https://github.com/yona3/typescanner
+- https://github.com/rhys-vdw/ts-auto-guard
 - https://github.com/imbrn/v8n
 - https://github.com/d-kimuson/type-predicates-generator
 - https://github.com/milesj/optimal
@@ -150,6 +158,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/vitalets/micro-schema
 - https://github.com/daniel7grant/dvali
 - https://github.com/crinklesio/schemas
+- https://github.com/facebook/prop-types
 
 ## VScode extensions
 
@@ -179,6 +188,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/garbles/json-schema-multi-compiler
 - https://github.com/json-schema-faker/json-schema-faker
 - https://github.com/typescript-cheatsheets/react
+- https://github.com/gendocu-com/grpc-docs - Interactive gRPC API Documentation
 
 
 ## Examples
