@@ -101,9 +101,10 @@ function mapValues(object, mapFunction) {
 - https://github.com/LinbuduLab/json-to-type-graphql JSON / Object / Request ---> TypeGraphQL Class!
 - https://github.com/develar/ts2jsdoc - Generate JSDoc from Typescript
 - Object to schema https://github.com/unjs/untyped
-- Generate TS types from sql schema https://github.com/vramework/schemats
+- Generate TS types from SQL schema https://github.com/vramework/schemats
 - OpenAPI to TS https://github.com/drwpow/openapi-typescript
 - protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
+- Protobuff to JSON schema https://github.com/devongovett/protobuf-jsonschema
 - Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
 - Typescript for CSS modules https://github.com/mrmckeb/typescript-plugin-css-modules
 - JS doc to json schema https://github.com/brettz9/jsdoc-jsonschema
@@ -116,7 +117,6 @@ function mapValues(object, mapFunction) {
 - https://github.com/nijikokun/generate-schema Convert JSON Objects to MySQL, JSON Schema, Mongoose, Google BigQuery, Swagger
 
 
-
 ## Extra imported types
 
 - https://github.com/krzkaczor/ts-essentials
@@ -127,7 +127,9 @@ function mapValues(object, mapFunction) {
 - https://github.com/jrylan/json-schema-typed JSON schema type
 - https://github.com/jrylan/http-method-enum HTTP methods as a TypeScript enum.
 - https://github.com/jrylan/enum-utils/
-
+- https://github.com/ronami/meta-typing
+- https://github.com/piotrwitek/utility-types
+- https://github.com/Lucifier129/coproduct
 
 ## Doc Generators
 
@@ -146,6 +148,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/pelotom/runtypes
 - https://github.com/vedantroy/typecheck.macro
 - https://github.com/sindresorhus/is + https://github.com/sindresorhus/ts-extras
+- https://github.com/sindresorhus/ow
 - https://github.com/shigma/schemastery
 - https://github.com/yona3/typescanner
 - https://github.com/rhys-vdw/ts-auto-guard
@@ -159,6 +162,8 @@ function mapValues(object, mapFunction) {
 - https://github.com/daniel7grant/dvali
 - https://github.com/crinklesio/schemas
 - https://github.com/facebook/prop-types
+- https://github.com/elierotenberg/typed-assert
+
 
 ## VScode extensions
 
@@ -189,6 +194,8 @@ function mapValues(object, mapFunction) {
 - https://github.com/json-schema-faker/json-schema-faker
 - https://github.com/typescript-cheatsheets/react
 - https://github.com/gendocu-com/grpc-docs - Interactive gRPC API Documentation
+- https://github.com/2fd/graphtype Generate TypeScripts definitions from GraphQL
+- https://github.com/rawrmaan/restyped End-to-end typing for REST APIs with TypeScript
 
 
 ## Examples
