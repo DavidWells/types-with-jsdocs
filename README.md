@@ -196,7 +196,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/gendocu-com/grpc-docs - Interactive gRPC API Documentation
 - https://github.com/2fd/graphtype Generate TypeScripts definitions from GraphQL
 - https://github.com/rawrmaan/restyped End-to-end typing for REST APIs with TypeScript
-
+- https://github.com/airtasker/spot Write API as code and generate other API contract formats (OpenAPI, Swagger, JSON Schema)
 
 ## Examples
 
