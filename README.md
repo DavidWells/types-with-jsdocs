@@ -205,7 +205,8 @@ function mapValues(object, mapFunction) {
 - https://github.com/etienne-dldc/zensql A Typescript type-safe SQL system
 - https://github.com/Ff00ff/mammoth A type-safe Postgres query builder for TypeScript.
 - https://github.com/JoshuaKGoldberg/TypeStat Converts JavaScript to TypeScript and TypeScript to better TypeScript.
-
+- https://github.com/airtasker/spot Write API as code and generate other API contract formats (OpenAPI, Swagger, JSON Schema)
+- https://github.com/readmeio/oas Easily create and manage OpenAPI Documents via code comments
 
 ## Examples
 
