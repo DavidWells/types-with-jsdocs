@@ -96,42 +96,42 @@ overloaded({ name: 'bob', age: 11 }, true)
 }} Gioconda
 */
 
-/** @type {Gioconda} */
-const monaLisa = (
-/** @param {string|boolean} sb */
-(sb) => {
-    return typeof sb === 'string' ? 1 : 2;
-});
+// /** @type {Gioconda} */
+// const monaLisa = (
+// /** @param {string|boolean} sb */
+// (sb) => {
+//     return typeof sb === 'string' ? 1 : 2;
+// });
 
-const obj = {
-    /** @type {Gioconda} */
-    monaLisa: (
-    /** @param {string|boolean} sb */
-    (sb) => {
-        return typeof sb === 'string' ? 1 : 2;
-    })
-};
+// const obj = {
+//     /** @type {Gioconda} */
+//     monaLisa: (
+//     /** @param {string|boolean} sb */
+//     (sb) => {
+//         return typeof sb === 'string' ? 1 : 2;
+//     })
+// };
 
-class MonaLisa {
-  /** @type {Gioconda} */
-  monaLisa = (
-  /** @param {string|boolean} sb */
-  (sb) => {
-      return typeof sb === 'string' ? 1 : 2;
-  })
-}
+// class MonaLisa {
+//   /** @type {Gioconda} */
+//   monaLisa = (
+//   /** @param {string|boolean} sb */
+//   (sb) => {
+//       return typeof sb === 'string' ? 1 : 2;
+//   })
+// }
 
-/** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
-var twothree = monaLisa(false);
-/** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
-var twothreeObj = obj.monaLisa(false);
-/** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
-var twothreeClass = new MonaLisa().monaLisa(false);
+// /** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
+// var twothree = monaLisa(false);
+// /** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
+// var twothreeObj = obj.monaLisa(false);
+// /** @type {2 | 3} - call resolve to (b: boolean) => 2 | 3 */
+// var twothreeClass = new MonaLisa().monaLisa(false);
 
-// js special property assignment should still be allowed
-monaLisa.overdrive = true;
-obj.monaLisa.overdrive = true;
-MonaLisa.prototype.monaLisa.overdrive = true;
+// // js special property assignment should still be allowed
+// monaLisa.overdrive = true;
+// obj.monaLisa.overdrive = true;
+// MonaLisa.prototype.monaLisa.overdrive = true;
 
 /**
  * 

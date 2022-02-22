@@ -96,12 +96,14 @@ function mapValues(object, mapFunction) {
 
 ## Conversion tools
 
+- https://transform.tools Transform lots of stuff!
 - https://github.com/vega/ts-json-schema-generator or https://github.com/horiuchi/dtsgenerator TypeScript d.ts file generator from JSON Schema file
 - https://github.com/YousefED/typescript-json-schema
 - https://github.com/LinbuduLab/json-to-type-graphql JSON / Object / Request ---> TypeGraphQL Class!
 - https://github.com/develar/ts2jsdoc - Generate JSDoc from Typescript
 - Object to schema https://github.com/unjs/untyped
 - Generate TS types from SQL schema https://github.com/vramework/schemats
+- https://github.com/rmp135/sql-ts Generate TypeScript interfaces from a SQL database.
 - OpenAPI to TS https://github.com/drwpow/openapi-typescript
 - protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
 - Protobuff to JSON schema https://github.com/devongovett/protobuf-jsonschema
@@ -114,6 +116,7 @@ function mapValues(object, mapFunction) {
 - [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
 - [JSON to JSDoc](https://transform.tools/json-to-jsdoc)
 - https://github.com/unjs/untyped
+- GraphQL to JSONSchema https://github.com/charlypoly/graphql-to-json-schema
 - https://github.com/nijikokun/generate-schema Convert JSON Objects to MySQL, JSON Schema, Mongoose, Google BigQuery, Swagger
 
 
@@ -130,6 +133,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/ronami/meta-typing
 - https://github.com/piotrwitek/utility-types
 - https://github.com/Lucifier129/coproduct
+- https://github.com/garronej/tsafe
 
 ## Doc Generators
 
@@ -138,6 +142,8 @@ function mapValues(object, mapFunction) {
 - https://github.com/yashag/jsdoctor A smart jsdoc generator
 - https://github.com/documentationjs/documentation
 - https://github.com/DavidWells/microsoft-api-documenter-example using `@microsoft/api-extractor` + `@microsoft/api-documenter`
+- https://github.com/TypeStrong/typedoc
+
 
 ## Runtime type checkers
 
@@ -196,6 +202,9 @@ function mapValues(object, mapFunction) {
 - https://github.com/gendocu-com/grpc-docs - Interactive gRPC API Documentation
 - https://github.com/2fd/graphtype Generate TypeScripts definitions from GraphQL
 - https://github.com/rawrmaan/restyped End-to-end typing for REST APIs with TypeScript
+- https://github.com/etienne-dldc/zensql A Typescript type-safe SQL system
+- https://github.com/Ff00ff/mammoth A type-safe Postgres query builder for TypeScript.
+- https://github.com/JoshuaKGoldberg/TypeStat Converts JavaScript to TypeScript and TypeScript to better TypeScript.
 
 
 ## Examples
