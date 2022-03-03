@@ -105,6 +105,7 @@ function mapValues(object, mapFunction) {
 - Generate TS types from SQL schema https://github.com/vramework/schemats
 - https://github.com/rmp135/sql-ts Generate TypeScript interfaces from a SQL database.
 - OpenAPI to TS https://github.com/drwpow/openapi-typescript
+- Generate type.d from openapi spec https://github.com/sigoden/openapi/tree/main/packages/typegen-openapi
 - protocol buffer messages to TS https://github.com/thesayyn/protoc-gen-ts
 - Protobuff to JSON schema https://github.com/devongovett/protobuf-jsonschema
 - Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
@@ -143,6 +144,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/documentationjs/documentation
 - https://github.com/DavidWells/microsoft-api-documenter-example using `@microsoft/api-extractor` + `@microsoft/api-documenter`
 - https://github.com/TypeStrong/typedoc
+- https://github.com/LinusU/ts-readme-generator
 
 
 ## Runtime type checkers
@@ -169,6 +171,12 @@ function mapValues(object, mapFunction) {
 - https://github.com/crinklesio/schemas
 - https://github.com/facebook/prop-types
 - https://github.com/elierotenberg/typed-assert
+- https://github.com/suchipi/serializable-types
+- https://github.com/gcanti/io-ts
+- https://github.com/thenativeweb/typedescriptor
+- https://github.com/thenativeweb/ensurethat
+- https://github.com/thenativeweb/formats
+- https://github.com/suchipi/pheno
 
 
 ## VScode extensions
@@ -208,6 +216,12 @@ function mapValues(object, mapFunction) {
 - https://github.com/airtasker/spot Write API as code and generate other API contract formats (OpenAPI, Swagger, JSON Schema)
 - https://github.com/readmeio/oas Easily create and manage OpenAPI Documents via code comments
 - https://github.com/Akryum/vue-typegen scan components and generate types
+- https://github.com/deanshub/data-from-types generates data from TypeScript types
+- https://github.com/chasefleming/enum-xyz Enums in vanilla JS via proxy
+- https://github.com/apidoc/apidoc RESTful web API Documentation Generator.
+- https://github.com/thenativeweb/is-typescript Check if project is typescript
+- https://github.com/suchipi/convert-to-dts
+
 
 ## Examples
 
