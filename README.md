@@ -69,6 +69,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/ipfs/aegir/blob/master/md/ts-jsdoc.md
 - [andreidmt/tpl-ts-jsdoc: Plain JavaScript with types by leveraging TypeScript's JSDoc support.](https://github.com/andreidmt/tpl-ts-jsdoc)
 - https://github.com/stereobooster/type-o-rama
+- [TypeScript Type Safety with AJV Standalone](https://rehanvdm.com/blog/typescript-type-safety-with-ajv-standalone) + https://github.com/rehanvdm/ajv-standalone-type-saftey
 - [Highest Voted 'jsdoc' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/jsdoc)
 
 ## Tools
@@ -145,7 +146,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/DavidWells/microsoft-api-documenter-example using `@microsoft/api-extractor` + `@microsoft/api-documenter`
 - https://github.com/TypeStrong/typedoc
 - https://github.com/LinusU/ts-readme-generator
-
+- https://github.com/marijnh/getdocs-ts + https://github.com/marijnh/builddocs
 
 ## Runtime type checkers
 

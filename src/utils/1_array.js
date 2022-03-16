@@ -6,6 +6,13 @@
  * @property {number} blue
  */
 
+
+/**
+ * JSDoc style with primative
+ * @type {Array}
+ */
+const gradesXyz = [98, 97.7, 76, 89];
+
 /**
  * JSDoc style with primative
  * @type {Array<number>}
@@ -56,7 +63,35 @@ let filePaths = [{ localPath: 'xyz', fullPath: 'abc' }];
 /** @type {Array} */
 var myArrayOfAnyType = ["children", true, 1, {}];
 
+/**
+ * @typedef MyType
+ * @type {Object}
+ * @property {string} userId
+ */
+/**
+ * @typedef MyTypeArray
+ * @type {Array.<MyType>}
+ */
+/** @type {MyTypeArray} */
+var xyzArray = [{ userId: '123'}, { userId: 'hehehe' }];
 // ────── Function returning an array of objects ─────────────────
+
+/**
+ * @typedef AwesomeObject
+ * @type {Object}
+ * @property {string} name
+ * @property {boolean} next
+ * @property {string} test
+ */
+
+/**
+ * @param {Array.<AwesomeObject>} awesomeObjects Awesome objects.
+ */
+function totalAmount(awesomeObjects) {
+  return awesomeObjects.map((d) => d)
+}
+
+// ────── Function returning an array of objects shorthand ─────────────────
 
 /**
  * @typedef {Object} Article

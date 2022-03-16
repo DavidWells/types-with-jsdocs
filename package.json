@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@analytics/listener-utils": "^0.2.4",
+    "@casl/ability": "^5.4.3",
     "@mantine/core": "^2.1.4",
     "@mantine/hooks": "^2.1.4",
     "@modulz/radix-icons": "^4.0.0",
@@ -57,6 +58,7 @@
     "doxxx": "^1.0.0",
     "eslint": "^7.31.0",
     "eslint-plugin-jsdoc": "^36.0.6",
+    "getdocs-ts": "^0.1.0",
     "global-jsdom": "^8.2.0",
     "inspx": "0.0.1-alpha.6",
     "jsdom": "^17.0.0",
