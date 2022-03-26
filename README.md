@@ -127,6 +127,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/krzkaczor/ts-essentials
 - https://github.com/millsp/ts-toolbelt
 - https://github.com/sindresorhus/type-fest
+- https://github.com/Col0ring/types-kit
 - https://github.com/alii/typestr
 - https://github.com/ghoullier/awesome-template-literal-types
 - https://github.com/jrylan/json-schema-typed JSON schema type
@@ -144,7 +145,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/yashag/jsdoctor A smart jsdoc generator
 - https://github.com/documentationjs/documentation
 - https://github.com/DavidWells/microsoft-api-documenter-example using `@microsoft/api-extractor` + `@microsoft/api-documenter`
-- https://github.com/TypeStrong/typedoc
+- https://github.com/TypeStrong/typedoc + https://github.com/panva/oauth4webapi/blob/51866b3d65a7ac92a8811e26e55c320f4828a7fc/package.json#L25
 - https://github.com/LinusU/ts-readme-generator
 - https://github.com/marijnh/getdocs-ts + https://github.com/marijnh/builddocs
 
@@ -154,6 +155,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
 - Tiny zod https://github.com/davidmdm/myzod
+- https://github.com/skarab42/tson - Type Safe Object Notation & Validation
 - https://github.com/pelotom/runtypes
 - https://github.com/vedantroy/typecheck.macro
 - https://github.com/sindresorhus/is + https://github.com/sindresorhus/ts-extras
@@ -178,6 +180,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/thenativeweb/ensurethat
 - https://github.com/thenativeweb/formats
 - https://github.com/suchipi/pheno
+
 
 
 ## VScode extensions
