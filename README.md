@@ -4,7 +4,9 @@ Experimentation repo for various ways to type react apps.
 
 See [./src](./src) folder for examples
 
-## Typescript ignore
+## Typescript ignore errors
+
+> Pro-tip: [CLI tool to automatically add ignore comments](https://github.com/kawamataryo/suppress-ts-errors)
 
 The `//@ts-ignore` tells TypeScript to ignore the TypeScript errors in the line following the comment.
 
@@ -112,7 +114,7 @@ function mapValues(object, mapFunction) {
 - Convert TS to flow https://github.com/zxbodya/flowts/blob/master/packages/tsflow/src/convertToFlow.ts
 - Typescript for CSS modules https://github.com/mrmckeb/typescript-plugin-css-modules
 - JS doc to json schema https://github.com/brettz9/jsdoc-jsonschema
-- https://github.com/Surnet/swagger-jsdoc - Generates swagger/openapi specification based on jsDoc comments and YAML files.
+- https://github.com/Surnet/swagger-jsdoc + https://github.com/ajmnz/swagger-jsdoc-indent - Generates swagger/openapi specification based on jsDoc comments and YAML files.
 - https://github.com/stereobooster/type-o-rama Directory of conversion tools
 - https://github.com/quicktype/quicktype - Generate types and converters from JSON, Schema, and GraphQL
 - [TS to JS with JSdoc](https://github.com/futurGH/ts-to-jsdoc)
@@ -155,6 +157,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
 - Tiny zod https://github.com/davidmdm/myzod
+- https://github.com/ianstormtaylor/superstruct
 - https://github.com/skarab42/tson - Type Safe Object Notation & Validation
 - https://github.com/pelotom/runtypes
 - https://github.com/vedantroy/typecheck.macro
@@ -223,6 +226,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/deanshub/data-from-types generates data from TypeScript types
 - https://github.com/chasefleming/enum-xyz Enums in vanilla JS via proxy
 - https://github.com/apidoc/apidoc RESTful web API Documentation Generator.
+- https://github.com/twentyfourg/jest-apidoc Generate api docs from jest tests
 - https://github.com/thenativeweb/is-typescript Check if project is typescript
 - https://github.com/suchipi/convert-to-dts
 
