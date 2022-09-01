@@ -122,7 +122,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/unjs/untyped
 - GraphQL to JSONSchema https://github.com/charlypoly/graphql-to-json-schema
 - https://github.com/nijikokun/generate-schema Convert JSON Objects to MySQL, JSON Schema, Mongoose, Google BigQuery, Swagger
-
+- https://github.com/xiaobebe/extract-typescript-types
 
 ## Extra imported types
 
