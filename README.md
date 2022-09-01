@@ -153,6 +153,7 @@ function mapValues(object, mapFunction) {
 
 ## Runtime type checkers
 
+- https://github.com/David-Kunz/derive-type Derive types dynamically by running tests to capture value combinations
 - https://github.com/brielov/typed
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
