@@ -163,6 +163,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/pelotom/runtypes
 - https://github.com/vedantroy/typecheck.macro
 - https://github.com/sindresorhus/is + https://github.com/sindresorhus/ts-extras
+- https://github.com/samchon/typescript-json Super-fast Runtime validator (type checker) with only one line
 - https://github.com/sindresorhus/ow
 - https://github.com/shigma/schemastery
 - https://github.com/yona3/typescanner
