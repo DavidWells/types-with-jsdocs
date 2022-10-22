@@ -153,6 +153,7 @@ function mapValues(object, mapFunction) {
 
 ## Runtime type checkers
 
+- https://github.com/moltar/typescript-runtime-type-benchmarks#packages-compared
 - https://github.com/David-Kunz/derive-type Derive types dynamically by running tests to capture value combinations
 - https://github.com/brielov/typed
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
