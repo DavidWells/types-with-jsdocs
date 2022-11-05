@@ -157,6 +157,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/David-Kunz/derive-type Derive types dynamically by running tests to capture value combinations
 - https://github.com/brielov/typed
 - https://github.com/grantila/typeconv for https://github.com/grantila/suretype
+- https://github.com/spaceteams/zap validation-first schema library with a functional api
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
 - Tiny zod https://github.com/davidmdm/myzod
 - https://github.com/ianstormtaylor/superstruct
