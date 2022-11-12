@@ -188,6 +188,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/thenativeweb/ensurethat
 - https://github.com/thenativeweb/formats
 - https://github.com/suchipi/pheno
+- https://github.com/markwylde/vamlid - A simple way to validate an object against a pure javascript schema.
 
 
 
