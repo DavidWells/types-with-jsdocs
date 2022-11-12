@@ -106,6 +106,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/develar/ts2jsdoc - Generate JSDoc from Typescript
 - Object to schema https://github.com/unjs/untyped
 - Generate TS types from SQL schema https://github.com/vramework/schemats
+- Generate TS types from JSON responses https://github.com/ThePrimeagen/undefined
 - https://github.com/rmp135/sql-ts Generate TypeScript interfaces from a SQL database.
 - OpenAPI to TS https://github.com/drwpow/openapi-typescript
 - Generate type.d from openapi spec https://github.com/sigoden/openapi/tree/main/packages/typegen-openapi
