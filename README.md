@@ -1,4 +1,4 @@
-# Vite + JSDoc + TS 
+# Using Typescript Types with JSDoc
 
 Experimentation repo for various ways to type react apps.
 
