@@ -140,6 +140,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/piotrwitek/utility-types
 - https://github.com/Lucifier129/coproduct
 - https://github.com/garronej/tsafe
+- https://github.com/g-plane/typed-query-selector typed `querySelector` and `querySelectorAll`
 
 ## Doc Generators
 
