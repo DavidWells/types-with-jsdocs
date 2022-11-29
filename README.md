@@ -211,6 +211,7 @@ function mapValues(object, mapFunction) {
 - eslint config https://github.com/Agoric/agoric-sdk/blob/20c4ff00adbffff067858c3c5702ae7a9e0522b8/packages/eslint-config/eslint-config.json + https://github.com/homer0/packages/tree/main/packages/personal/eslint-plugin
 - https://github.com/benawad/gen-env-types - Generate a .d.ts and .env.example file from your .env file 
 - Converts from JSON Schema to JSDoc https://github.com/n3ps/json-schema-to-jsdoc or https://github.com/mizuka-wu/json-schema-to-jsdoc/blob/master/src/plugins/jsonschema2jsdoc.js
+- https://github.com/livingdocsIO/microschema Small library without dependencies to create JSON Schemas.
 - https://github.com/stereobooster/type-o-rama
 - https://github.com/johnthecat/babel-plugin-jsdoc-runtime-typecheck/
 - https://github.com/heavenshell/ts-lehre
