@@ -15,7 +15,7 @@ const userAccountDefault = {
  * @param {typeof userAccountDefault} account
  */
 export function setAccount(account) {
-  
+  console.log(account.id)
 }
 
 setAccount({
