@@ -165,6 +165,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/colinhacks/zod/ + https://github.com/fabien0102/ts-to-zod + https://github.com/alii/azs
 - Tiny zod https://github.com/davidmdm/myzod
 - https://github.com/ianstormtaylor/superstruct
+- https://github.com/artalar/rtcad
 - https://github.com/skarab42/tson - Type Safe Object Notation & Validation
 - https://github.com/pelotom/runtypes
 - https://github.com/vedantroy/typecheck.macro
