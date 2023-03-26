@@ -41,6 +41,7 @@ function mapValues(object, mapFunction) {
 
 ## Examples
 
+- https://github.com/Rich-Harris/devalue
 - https://github.com/meduzen/datetime-attribute
 
 ## Resources & Articles
