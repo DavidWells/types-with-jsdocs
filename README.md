@@ -204,7 +204,7 @@ function mapValues(object, mapFunction) {
 
 ## Msc
 
-- [@jitl/ts-simple-type](https://github.com/DavidWells?tab=repositories&type=&language=&q=](https://github.com/justjake/ts-simple-type) - provides a simple, type-safe API for analyzing types, constructing new types, and generating code based on types.
+- [@jitl/ts-simple-type](https://github.com/justjake/ts-simple-type) - provides a simple, type-safe API for analyzing types, constructing new types, and generating code based on types.
 - [typesync](https://github.com/jeffijoe/typesync) Install missing TypeScript typings for dependencies in your package.json.
 - [type-coverage](https://github.com/plantain-00/type-coverage) A CLI tool to check type coverage for typescript code
 - [typescript-error-reporter-action](https://github.com/Gozala/typescript-error-reporter-action) GitHub Action to diagnose TypeScript errors and report the result on PR.
