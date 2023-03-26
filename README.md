@@ -39,6 +39,10 @@ function mapValues(object, mapFunction) {
 // @ts-nocheck
 ```
 
+## Examples
+
+- https://github.com/meduzen/datetime-attribute
+
 ## Resources & Articles
 
 - [JSDoc typings: all the benefits of TypeScript, with none of the drawbacks](https://gils-blog.tayar.org/posts/jsdoc-typings-all-the-benefits-none-of-the-drawbacks/) + [giltayar/jsdoc-typing](https://github.com/giltayar/jsdoc-typing)
