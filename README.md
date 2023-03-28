@@ -79,6 +79,7 @@ function mapValues(object, mapFunction) {
 - https://github.com/stereobooster/type-o-rama
 - [TypeScript Type Safety with AJV Standalone](https://rehanvdm.com/blog/typescript-type-safety-with-ajv-standalone) + https://github.com/rehanvdm/ajv-standalone-type-saftey
 - [Highest Voted 'jsdoc' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/jsdoc)
+- [Types in JavaScript With Zod and JSDoc](https://blog.jim-nielsen.com/2023/types-in-jsdoc-with-zod/)
 
 ## Tools
 
