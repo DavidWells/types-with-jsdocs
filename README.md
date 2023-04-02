@@ -4,6 +4,14 @@ Experimentation repo for various ways to type react apps.
 
 See [./src](./src) folder for examples
 
+## Globally enable TS checking
+
+To enable TS to run everywhere use the [`js/ts.implicitProjectConfig.checkJS`](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_type-checking-javascript) setting in your VScode workspace or user settings.
+
+```json
+"js/ts.implicitProjectConfig.checkJs": true
+```
+
 ## Typescript ignore errors
 
 > Pro-tip: [CLI tool to automatically add ignore comments](https://github.com/kawamataryo/suppress-ts-errors)
