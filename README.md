@@ -51,6 +51,7 @@ function mapValues(object, mapFunction) {
 
 - https://github.com/Rich-Harris/devalue
 - https://github.com/meduzen/datetime-attribute
+- [https://github.com/ds300/lazyrepo/](blob/main/src/manifest/ManifestConstructor.js)
 - A bunch of examples https://github.com/voxpelli/types-in-js/discussions/11
 
 ## Resources & Articles
