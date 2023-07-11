@@ -1,27 +1,28 @@
 import React, { Context } from 'react'
 
 /**
- * @typedef TMyGeneralContext
+ * React context example
+ * @typedef FooBar
  * @property {object} competitionState
  * @property {'finished' | 'inprogress'} status
- * @property {Array} notificationActionsts
+ * @property {Array<number>} notificationActions
  */
 
 // Import style
 
-/** @type {import('react').Context<TMyGeneralContext>} */
+/** @type {import('react').Context<FooBar>} */
 export const MyThemeContext = React.createContext({
-    competitionState: {},
-    notificationActionsts: [],
-    status: 'finished'
+  competitionState: {},
+  notificationActions: [],
+  status: 'finished'
 });
 
 
 // Imported type style
 
-/** @type {Context<TMyGeneralContext>} */
+/** @type {Context<FooBar>} */
 export const MyThemeContextTwo = React.createContext({
-    competitionState: {},
-    notificationActionsts: [],
-    status: 'finished'
+  competitionState: {},
+  notificationActions: [],
+  status: 'finished'
 });

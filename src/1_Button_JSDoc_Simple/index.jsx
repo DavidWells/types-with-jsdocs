@@ -70,3 +70,13 @@ export function ButtonThree (buttonProps) {
     </button>
   )
 }
+
+/**
+ * Foobar function
+ * @param {number} a - does thing
+ * @param {number} b - xyz
+ * @returns 
+ */
+export function fooBar(a, b) {
+  return a + b
+}

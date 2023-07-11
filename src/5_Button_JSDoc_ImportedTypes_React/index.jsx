@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 /**
  * Renders a <ButtonReactTypes /> component with useful react types
