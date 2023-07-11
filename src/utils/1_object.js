@@ -209,3 +209,15 @@ const x = {
 const objectWithOptionalKeys = {
   cases: ['xyz']
 }
+
+
+// ───────────────────────
+// https://dev.to/samuel-braun/boost-your-javascript-with-jsdoc-typing-3hb3
+
+// Type aliasing
+/** @typedef {number} Age */
+/** @typedef {string} Name */
+/** @typedef {{ name: Name; age: Age }} MyUser */
+
+/** @type {MyUser} */
+const userThing = { name: 'John Doe', age: 25 };

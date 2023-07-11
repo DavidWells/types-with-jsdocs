@@ -48,6 +48,11 @@ const arrayOfNumbers = [1, 2, 3];
 const arrayOfBools = [true, false, true];
 
 /**
+ * @type {Array.<String|Boolean>}
+ */
+const arrayOfStringOrBools = ['true', false, 'true'];
+
+/**
  * TypeScript style
  * @type {RgbColors[]}
  */
@@ -144,6 +149,12 @@ const myArray = [{ known: 2, yep: true, defo: 'yay', xyz: '123' }]
 
 /** @type {MyTuple} */
 const single = ['aqua-160', 160, 'PreCleaning']
+
+/** @type {Array<Array<number>>} */
+const arrayOfArrays = [[1, 2], [3, 4]];
+
+/** @type {number[][]} */
+const arrayOfArraysDiffSyntax = [[1, 2], [3, 4]];
 
 /** @type {Array<Array<MyTuple>>} */
 const nestedArrays = [ 
