@@ -49,9 +49,11 @@ function mapValues(object, mapFunction) {
 
 ## Examples
 
+- A bunch of examples https://github.com/voxpelli/types-in-js/discussions/11
 - https://github.com/Rich-Harris/devalue
 - https://github.com/meduzen/datetime-attribute
-- A bunch of examples https://github.com/voxpelli/types-in-js/discussions/11
+- [https://github.com/ds300/lazyrepo/](blob/main/src/manifest/ManifestConstructor.js)
+- [https://github.com/sveltejs/kit/](https://github.com/sveltejs/kit/blob/master/packages/kit/src/core/utils.js)
 
 ## Resources & Articles
 
