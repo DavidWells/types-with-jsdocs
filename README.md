@@ -52,6 +52,7 @@ function mapValues(object, mapFunction) {
 - A bunch of examples https://github.com/voxpelli/types-in-js/discussions/11
 - https://github.com/Rich-Harris/devalue
 - https://github.com/meduzen/datetime-attribute
+- https://github.com/geut/deluge/blob/main/src/deluge.js#L1-L29
 - [https://github.com/ds300/lazyrepo/](blob/main/src/manifest/ManifestConstructor.js)
 - [https://github.com/sveltejs/kit/](https://github.com/sveltejs/kit/blob/master/packages/kit/src/core/utils.js)
 
