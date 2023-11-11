@@ -18,6 +18,7 @@ src/**/**/*.schema.json
 # Ignore Auto generated types, except types.d.ts files
 src/**/**/*.d.ts
 !src/**/**/types.d.ts
+!src/utils/imports/my.d.ts
 
 # Ignore Auto generated CSS types
 src/**/**/*.css.d.ts
