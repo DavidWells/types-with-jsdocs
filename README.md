@@ -146,6 +146,7 @@ function mapValues(object, mapFunction) {
 
 ## Extra imported types
 
+- https://github.com/ThomasAribart/json-schema-to-ts
 - https://github.com/krzkaczor/ts-essentials
 - https://github.com/millsp/ts-toolbelt
 - https://github.com/sindresorhus/type-fest
